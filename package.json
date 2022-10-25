@@ -1,6 +1,6 @@
 {
   "name": "@quarkd/quark-cli",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "type": "module",
   "bin": {
@@ -16,6 +16,11 @@
     "nanospinner": "^1.1.0",
     "prompts": "^2.4.2"
   },
+  "keywords": [
+    "quark-cli",
+    "cli",
+    "quark"
+  ],
   "devDependencies": {
     "vite": "^3.1.8"
   }

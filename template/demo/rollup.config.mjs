@@ -2,7 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { babel } from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
-import postcss from 'quark-rollup-plugin-postcss';
+import postcss from '@quarkd/rollup-plugin-postcss';
 import px2vp from "postcss-px-to-viewport";
 import filesize from 'rollup-plugin-filesize';
 
