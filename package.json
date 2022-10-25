@@ -1,0 +1,22 @@
+{
+  "name": "@quarkd/quark-cli",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "create-quark": "src/index.js"
+  },
+  "scripts": {},
+  "author": "xiaoyang Guo",
+  "license": "ISC",
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "nanospinner": "^1.1.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "vite": "^3.1.8"
+  }
+}
