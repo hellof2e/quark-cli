@@ -1,9 +1,19 @@
-### Quark CLI
+# Create Quark App
 
-#### Install
+## Intall
 
 ```
 npm i -g @quarkd/quark-cli
-npx create-quark
 ```
+
+## Quick Overview
+
+```
+npx create-quark
+cd quark-project
+npm i
+npm start
+```
+
+Then open http://localhost:3000/ to see your app.
 
