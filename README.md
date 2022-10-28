@@ -19,22 +19,10 @@ With NPX:
 npx create-quark
 ```
 
-With NPM:
+Or with NPM:
 
 ```shell
 npm create quark
-```
-
-You can also directly specify the project name you want to use via additional command line options. For example run:
-
-```shell
-npx create-quark quark-project
-```
-
-or
-
-```shell
-npm create quark quark-project
 ```
 
 ## Quick Overview
