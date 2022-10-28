@@ -10,10 +10,25 @@
 npm i -g @quarkd/quark-cli
 ```
 
-## 启动
+## 创建项目
+
+### npx
 
 ```
 npx create-quark
+```
+
+or
+
+### npm
+
+```
+npm create quark
+```
+
+## 启动项目
+
+```
 cd quark-project
 npm i
 npm start
@@ -29,3 +44,4 @@ Quark-CLI 可以让大家在直接在日常开发中开发横跨多个技术栈/
 
 - 同时运行在不同技术栈（Angular、Vue、React等）的前端工程中
 - 同时运行在不同版本的技术栈中，比如能同时运行在 Vue2.x、Vue3.x 中
+
