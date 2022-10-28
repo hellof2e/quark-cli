@@ -1,6 +1,9 @@
-### quark-cli
+### Quark CLI
 
-#### 安装
-1. npm i -g @quarkd/quark-cli
-2. npx create-quark
+#### Install
+
+```
+npm i -g @quarkd/quark-cli
+npx create-quark
+```
 
