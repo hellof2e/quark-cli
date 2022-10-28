@@ -2,6 +2,8 @@
 
 With this CLI, you can use this to create a cross-framework/tech stack component, or perhaps you can package it as an npm package for distribution for others to use.
 
+English | [简体中文](./README.zh-CN.md)
+
 ## Intall
 
 ```
