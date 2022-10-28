@@ -1,14 +1,14 @@
 # Create Quark App
 
-With this CLI, you can use this to create a cross-framework/tech stack component, or perhaps you can package it as an npm package for distribution for others to use.
+通过这个CLI，您可以使用这个来创建一个跨框架/技术栈的组件，或许你也可以将其打包成 npm 包进行发布，供他人使用。
 
-## Intall
+## 安装
 
 ```
 npm i -g @quarkd/quark-cli
 ```
 
-## Quick Overview
+## 启动
 
 ```
 npx create-quark
