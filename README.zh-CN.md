@@ -4,6 +4,22 @@
 
 [English](./README.md) | 简体中文
 
+```tsx
+import QuarkElement, { customElement } from '@quarkd/core'
+@customElement({
+  tag: 'my-component',
+})
+class MyComponent extends QuarkElement {
+  render() {
+    return (
+      <div>
+        <h1>Hello Quark!</h1>
+      </div>
+    )
+  }
+}
+```
+
 ## 安装
 
 ```
