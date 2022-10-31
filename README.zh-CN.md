@@ -20,6 +20,12 @@ class MyComponent extends QuarkElement {
 }
 ```
 
+然后，当成普通标签在各类框架（React/Vue/Angular/JQ）中使用：
+```html
+<my-component></my-component>
+```
+
+
 ## 安装
 
 ```
