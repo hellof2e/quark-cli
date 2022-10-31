@@ -4,6 +4,23 @@ With this CLI, you can use this to create a cross-framework/tech stack component
 
 English | [简体中文](./README.zh-CN.md)
 
+```tsx
+import QuarkElement, { customElement } from '@quarkd/core'
+
+@customElement({
+  tag: 'my-component',
+})
+class MyComponent extends QuarkElement {
+  render() {
+    return (
+      <div>
+        <h1>Hello Quark!</h1>
+      </div>
+    )
+  }
+}
+```
+
 ## Installation:
 
 > NOTE: Vite requires Node.js version 14.18+, 16+. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
