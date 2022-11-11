@@ -60,7 +60,7 @@ npm start
 
 Then open http://localhost:3000/ to see your app.
 
-<img width="1431" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
 
 ## Examples of usage scenarios
 
