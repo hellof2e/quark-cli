@@ -58,9 +58,9 @@ npm install
 npm start
 ```
 
-Then open http://localhost:5173/ to see your app.
+Then open http://localhost:3000/ to see your app.
 
-<img width="650" alt="image" src="https://user-images.githubusercontent.com/14307551/198551050-ce7d81c7-8aa8-413a-a42a-130471f399b1.png">
+<img width="1431" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
 
 ## Examples of usage scenarios
 
