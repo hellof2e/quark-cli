@@ -1,6 +1,6 @@
 # Create CLI
 
-通过这个CLI，您可以使用这个来创建一个跨框架/技术栈的组件，或许你也可以将其打包成 npm 包进行发布，供他人使用。
+通过这个CLI，您可以创建一个跨框架/技术栈的组件，或许你也可以将其打包成 npm 包进行发布，供他人使用。
 
 [English](./README.md) | 简体中文
 
@@ -58,7 +58,7 @@ npm start
 
 Then open http://localhost:3000/ to see your app.
 
-<img width="650" alt="image" src="https://user-images.githubusercontent.com/14307551/198551050-ce7d81c7-8aa8-413a-a42a-130471f399b1.png">
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
 
 ## 使用场景举例（为您的项目/团队提效降本）
 
