@@ -27,8 +27,6 @@ Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 <my-component></my-component>
 ```
 
-<img width="100%" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
-
 
 ## Installation:
 
@@ -61,6 +59,10 @@ npm start
 ```
 
 Then open http://localhost:3000/ to see your app.
+
+
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
+
 
 ## Examples of usage scenarios
 
