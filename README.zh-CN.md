@@ -6,6 +6,7 @@
 
 ```tsx
 import { QuarkElement, customElement } from 'quarkc'
+
 @customElement({
   tag: 'my-component',
 })
@@ -36,7 +37,7 @@ npm i -g @quarkd/quark-cli
 ### npx
 
 ```
-npx create-quark
+npx create-quark-element
 ```
 
 or
@@ -44,7 +45,7 @@ or
 ### npm
 
 ```
-npm create quark
+npm create quark-element
 ```
 
 ## 启动项目

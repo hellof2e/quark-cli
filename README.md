@@ -41,13 +41,13 @@ npm i -g @quarkd/quark-cli
 With NPX:
 
 ```shell
-npx create-quark
+npx create-quark-element
 ```
 
 Or with NPM:
 
 ```shell
-npm create quark
+npm create quark-element
 ```
 
 ## Quick Overview

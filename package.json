@@ -1,10 +1,10 @@
 {
   "name": "@quarkd/quark-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Quark CLI",
   "type": "module",
   "bin": {
-    "create-quark": "src/index.js"
+    "create-quark-element": "src/index.js"
   },
   "scripts": {
     "dev": "tsc -w"
