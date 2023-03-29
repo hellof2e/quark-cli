@@ -38,4 +38,4 @@ class MyElement extends QuarkElement {
   }
 }
 
-export default my-element;
+export default MyElement;
