@@ -6,7 +6,9 @@
   "bin": {
     "create-quark": "src/index.js"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "tsc -w"
+  },
   "author": "xiaoyang Guo",
   "license": "ISC",
   "dependencies": {
