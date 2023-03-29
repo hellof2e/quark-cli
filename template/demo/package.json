@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "npm run start",
-    "start": "vite --host",
+    "start": "vite --open --force",
     "build": "rm -rf lib && rollup -c"
   },
   "main": "./dist/index.js",
