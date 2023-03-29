@@ -1,7 +1,7 @@
 {
   "name": "@quarkd/quark-cli",
-  "version": "1.0.5",
-  "description": "",
+  "version": "1.0.6",
+  "description": "Quark CLI",
   "type": "module",
   "bin": {
     "create-quark": "src/index.js"
