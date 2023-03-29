@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "tsc -w"
   },
-  "author": "xiaoyang Guo",
-  "license": "ISC",
+  "author": "xsf0105",
+  "license": "MIT",
   "dependencies": {
     "enquirer": "^2.3.6",
     "kolorist": "^1.6.0",
