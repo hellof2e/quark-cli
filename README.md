@@ -5,7 +5,7 @@ With this CLI, you can use this to create a cross-framework/tech stack component
 English | [简体中文](./README.zh-CN.md)
 
 ```tsx
-import QuarkElement, { customElement } from '@quarkd/core'
+import { QuarkElement, customElement } from 'quarkc'
 
 @customElement({
   tag: 'my-component',
