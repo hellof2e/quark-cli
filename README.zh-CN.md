@@ -5,7 +5,7 @@
 [English](./README.md) | 简体中文
 
 ```tsx
-import QuarkElement, { customElement } from '@quarkd/core'
+import { QuarkElement, customElement } from 'quarkc'
 @customElement({
   tag: 'my-component',
 })
