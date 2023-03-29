@@ -4,27 +4,6 @@
 
 [English](./README.md) | 简体中文
 
-```tsx
-import { QuarkElement, customElement } from 'quarkc'
-@customElement({
-  tag: 'my-component',
-})
-class MyComponent extends QuarkElement {
-  render() {
-    return (
-      <div>
-        <h1>Hello Quark!</h1>
-      </div>
-    )
-  }
-}
-```
-
-然后，当成普通标签在各类框架（React/Vue/Angular/JQ）中使用：
-```html
-<my-component></my-component>
-```
-
 ## 安装
 
 ```
@@ -36,7 +15,7 @@ npm i -g @quarkd/quark-cli
 ### npx
 
 ```
-npx create-quark
+npx create-quark-element
 ```
 
 or
@@ -44,7 +23,7 @@ or
 ### npm
 
 ```
-npm create quark
+npm create quark-element
 ```
 
 ## 启动项目
