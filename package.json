@@ -1,13 +1,10 @@
 {
   "name": "@quarkd/quark-cli",
-  "version": "1.0.11",
-  "description": "Quark CLI",
+  "version": "1.0.14",
+  "description": "",
   "type": "module",
   "bin": {
     "create-quark": "src/index.js"
-  },
-  "scripts": {
-    "dev": "tsc -w"
   },
   "author": "xsf0105",
   "license": "MIT",

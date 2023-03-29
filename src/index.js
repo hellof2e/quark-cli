@@ -105,7 +105,7 @@ async function init() {
     fs.mkdirSync(root, { recursive: true })
   }
 
-  const templateDir = path.resolve(fileURLToPath(import.meta.url), '../../template');
+  const templateDir = path.resolve(fileURLToPath(import.meta.url), '../../template/demo/');
 
 
   const files = fs.readdirSync(templateDir);
