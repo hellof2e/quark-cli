@@ -1,32 +1,30 @@
 #!/usr/bin/env node
 
-import prompts from 'prompts'
-import minimist from 'minimist'
+import prompts from 'prompts';
+import minimist from 'minimist';
 import path from 'path';
 import fs from 'fs';
-import { fileURLToPath } from 'url'
-import {
-  red,
-  reset,
-} from 'kolorist'
+import { fileURLToPath } from 'url';
+import { red, reset } from 'kolorist';
+import Printer  from './printer';
 
 const defaultTargetDir = 'my-element';
 const cwd = process.cwd();
 // ['_']对应的参数均为string类型
-const argv = minimist(process.argv.slice(2), { string: ['_'] })
+const argv = minimist(process.argv.slice(2), { string: ['_'] });
 
 
 // 格式化非法字符串
 function formatTargetDir(targetDir) {
-  return targetDir?.trim().replace(/\+$/g, '')
+  return targetDir?.trim().replace(/\+$/g, '');
 }
 
 function copy(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
-    copyDir(src, dest)
+    copyDir(src, dest);
   } else {
-    fs.copyFileSync(src, dest)
+    fs.copyFileSync(src, dest);
   }
 }
 
@@ -35,14 +33,14 @@ function copyDir(src, dest) {
   for (const file of fs.readdirSync(src)) {
     const srcFile = path.resolve(src, file);
     const destFile = path.resolve(dest, file);
-    copy(srcFile, destFile)
+    copy(srcFile, destFile);
   }
 }
 
 // 校验文件夹是否为空
 function isEmpty(src) {
   const files = fs.readdirSync(src);
-  return files.length === 0 || (files.length === 1 && files[0] === '.git')
+  return files.length === 0 || (files.length === 1 && files[0] === '.git');
 }
 
 function emptyDir(dir) {
@@ -51,12 +49,11 @@ function emptyDir(dir) {
   }
   for (const file of fs.readdirSync(dir)) {
     if (file === '.git') {
-      continue
+      continue;
     }
-    fs.rmSync(path.resolve(dir, file), { recursive: true, force: true })
+    fs.rmSync(path.resolve(dir, file), { recursive: true, force: true });
   }
 }
-
 
 
 async function init() {
@@ -85,12 +82,12 @@ async function init() {
       ],
       {
         onCancel: () => {
-          throw new Error(red('✖') + ' Operation cancelled')
+          throw new Error(red('✖') + ' Operation cancelled');
         }
       }
     );
   } catch (cancelled) {
-    console.log(cancelled.message)
+    console.log(cancelled.message);
     return;
   }
 
@@ -98,9 +95,9 @@ async function init() {
   const root = path.join(cwd, targetDir);
   const { overwrite } = result;
   if (overwrite) {
-    emptyDir(root)
+    emptyDir(root);
   } else {
-    fs.mkdirSync(root, { recursive: true })
+    fs.mkdirSync(root, { recursive: true });
   }
 
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '../../template/application');
@@ -111,21 +108,15 @@ async function init() {
 
   for (const file of files) {
     const targetPath = path.resolve(root, file);
-    if (file === '.git') continue
-    copy(path.join(templateDir, file), targetPath)
-
+    if (file === '.git') continue;
+    copy(path.join(templateDir, file), targetPath);
   }
 
-  console.log(`\nScaffolding project in ${root}...`);
 
-  console.log(`
-    \n cd ${path.basename(root)}
-    npm install
-    npm run dev
-  `)
-
+  // Done! And print hello world.
+  Printer.power(root);
 }
 
 init().catch((err) => {
-  console.log('error', err)
-})
+  console.log('error', err);
+});
