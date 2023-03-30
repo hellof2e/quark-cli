@@ -7,9 +7,8 @@ class CreateCommand {
     }
     resolve(action) {
         this.program
-            .command('create [name]')
-            .alias('c')
-            .description('Generate Node application.')
+            .command('[name]')
+            .description('Generate Quark application.')
             .action(async (name = '', destination) => {
             await action.source('application').resolve(name, destination);
         });

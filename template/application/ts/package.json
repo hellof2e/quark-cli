@@ -8,9 +8,6 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "files": [
-    "./dist/index.js"
-  ],
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@quarkd/rollup-plugin-postcss": "^1.0.0",
