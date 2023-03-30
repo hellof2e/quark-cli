@@ -18,7 +18,7 @@ class MyElement extends QuarkElement {
     return (
       <Fragment>
         <div>
-          <a href="https://quark-design.hellobike.com" target="_blank">
+          <a href="https://quark.hellobike.com" target="_blank">
             <img src={logo} class="logo" alt="quark logo" />
           </a>
         </div>
