@@ -59,6 +59,7 @@ function emptyDir(dir) {
 
 
 async function init() {
+  const start = Date.now();
   const argTargetDir = formatTargetDir(argv._[0]);
   let targetDir = argTargetDir || defaultTargetDir;
 
@@ -124,15 +125,32 @@ async function init() {
     }
     console.log(data);
 
-    // console.log(`\nScaffolding project in ${root}`);
-
-    console.log(chalk.green('\nInstalling dependencies...'));
+    console.log(chalk.blue('\nInstalling dependencies...\n'));
 
     sh.exec(
-      `cd ${path.basename(root)} && npm install`
+      `cd ${path.basename(root)} && npm install && clear`
     );
-    console.log(chalk.green(`\n You can start the project with:`));
-    console.log(chalk.green(`\n npm run dev`));
+
+    const end = Date.now();
+    console.log(`\n ✨ Done in ${(end - start) / 1000}s\n`);
+
+    console.log(`Success!`)
+    console.log(`Inside that directory, you can run several commands:\n`)
+    
+    console.log(` ${chalk.blue('npm run dev')}`)
+    console.log(`   Starts the development server.\n`)
+    
+    console.log(` ${chalk.blue('npm run build')}`)
+    console.log(`   Bundles the component inro static files for production.\n`)
+    
+    console.log(` ${chalk.blue('npm run test')}`)
+    console.log(`   Starts the test runner.\n`)
+
+    console.log(` We suggest that you begin by typing:\n`);
+    console.log(`   ${chalk.blue(`\n cd`)} ${path.basename(root)}`);
+    console.log(`   ${chalk.blue(`\n npm run dev`)}\n`);
+
+    console.log('Happy hacking!');
   });
 }
 
