@@ -1,4 +1,4 @@
 /node_modules
 /old
 /temp
-/dist
+dist/**/*
