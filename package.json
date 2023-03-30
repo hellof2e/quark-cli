@@ -22,5 +22,8 @@
     "quark-cli",
     "cli",
     "quark"
-  ]
+  ],
+  "devDependencies": {
+    "shelljs": "^0.8.5"
+  }
 }

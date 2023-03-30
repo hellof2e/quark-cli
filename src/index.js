@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 import { red, reset } from 'kolorist';
 import figlet from "figlet";
 import chalk from "chalk";
-
+import sh from "shelljs";
 
 const defaultTargetDir = 'my-element';
 const cwd = process.cwd();
@@ -116,7 +116,7 @@ async function init() {
 
 
   // Done! And print hello world.
-  figlet('Enjoy Quark', (err, data) => {
+  figlet('Hello Quark', (err, data) => {
     if (err) {
       console.log('Something went wrong...');
       console.dir(err);
@@ -126,11 +126,13 @@ async function init() {
 
     // console.log(`\nScaffolding project in ${root}`);
 
-    console.log('\nDone! Enjoy it!');
+    console.log(chalk.green('\nInstalling dependencies...'));
 
-    console.log(chalk.green(`> cd ${path.basename(root)}`));
-    console.log(chalk.green('> npm install'));
-    console.log(chalk.green('> npm run dev'));
+    sh.exec(
+      `cd ${path.basename(root)} && npm install`
+    );
+    console.log(chalk.green(`\n You can start the project with:`));
+    console.log(chalk.green(`\n npm run dev`));
   });
 }
 
