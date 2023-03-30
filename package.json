@@ -1,9 +1,9 @@
 {
   "name": "@quarkd/cli",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Quark project tools",
   "bin": {
-    "create-quark-element": "./dist/bin/index.js"
+    "create-quark-element": "dist/bin/index.js"
   },
   "scripts": {
     "dev": "tsc -w",
