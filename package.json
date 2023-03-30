@@ -1,6 +1,6 @@
 {
   "name": "@quarkd/cli",
-  "version": "0.0.18",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "bin": {
