@@ -5,8 +5,7 @@
 [English](./README.md) | 简体中文
 
 ```tsx
-import { QuarkElement, customElement } from 'quarkc'
-
+import QuarkElement, { customElement } from '@quarkd/core'
 @customElement({
   tag: 'my-component',
 })
@@ -37,7 +36,7 @@ npm i -g @quarkd/quark-cli
 ### npx
 
 ```
-npx create-quark-element
+npx create-quark
 ```
 
 or
@@ -45,7 +44,7 @@ or
 ### npm
 
 ```
-npm create quark-element
+npm create quark
 ```
 
 ## 启动项目

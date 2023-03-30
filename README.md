@@ -5,7 +5,7 @@ With this CLI, you can use this to create a cross-framework/tech stack component
 English | [简体中文](./README.zh-CN.md)
 
 ```tsx
-import { QuarkElement, customElement } from 'quarkc'
+import QuarkElement, { customElement } from '@quarkd/core'
 
 @customElement({
   tag: 'my-component',
@@ -33,7 +33,7 @@ Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 > NOTE: Vite requires Node.js version 14.18+, 16+. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
 
 ```
-npm i -g @quarkd/cli
+npm i -g @quarkd/quark-cli
 ```
 
 ## Create project
@@ -41,13 +41,13 @@ npm i -g @quarkd/cli
 With NPX:
 
 ```shell
-npx create-quark-element
+npx create-quark
 ```
 
 Or with NPM:
 
 ```shell
-npm create quark-element
+npm create quark
 ```
 
 ## Quick Overview
