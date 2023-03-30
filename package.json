@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "bin": {
-    "create-quark": "src/index.js"
+    "create-quark-element": "src/index.js"
   },
   "scripts": {},
   "author": "xsf0105",

@@ -10,9 +10,7 @@ import {
   reset,
 } from 'kolorist'
 
-
-
-const defaultTargetDir = 'quark-project';
+const defaultTargetDir = 'my-element';
 const cwd = process.cwd();
 // ['_']对应的参数均为string类型
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
@@ -73,7 +71,7 @@ async function init() {
         type: argTargetDir ? null : 'text',
         name: 'Project name: ',
         message: reset('project name:'),
-        initial: 'quark-project',
+        initial: 'my-element',
         onState: (state) => {
           targetDir = formatTargetDir(state.value) || defaultTargetDir;
         }
@@ -105,7 +103,7 @@ async function init() {
     fs.mkdirSync(root, { recursive: true })
   }
 
-  const templateDir = path.resolve(fileURLToPath(import.meta.url), '../../template/demo');
+  const templateDir = path.resolve(fileURLToPath(import.meta.url), '../../template/application');
 
 
   const files = fs.readdirSync(templateDir);

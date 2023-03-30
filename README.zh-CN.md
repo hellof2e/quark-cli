@@ -50,7 +50,7 @@ npm create quark
 ## 启动项目
 
 ```
-cd quark-project
+cd my-element
 npm i
 npm start
 ```
