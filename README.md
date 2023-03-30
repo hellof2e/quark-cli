@@ -20,12 +20,6 @@ With NPX:
 npx create-quark-element
 ```
 
-Or with NPM:
-
-```shell
-npm create quark-element
-```
-
 ## Quick Overview
 
 ```
@@ -69,12 +63,3 @@ Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 ```html
 <my-component></my-component>
 ```
-
-## Examples of usage scenarios
-
-Increase efficiency and reduce cost for your project/team！
-
-Quark-CLI allows you to develop business components across multiple technology stacks/frameworks directly in daily development. For example, a marketing pop-up window of the same style can do:
-
-- Running in front-end projects of different technology stacks (Angular, Vue, React, etc.) at the same time
-- Run in different versions of the technology stack at the same time, such as running in Vue2.x, Vue3.x at the same time
