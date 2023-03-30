@@ -4,22 +4,6 @@
 
 [English](./README.md) | 简体中文
 
-```tsx
-import QuarkElement, { customElement } from '@quarkd/core'
-@customElement({
-  tag: 'my-component',
-})
-class MyComponent extends QuarkElement {
-  render() {
-    return (
-      <div>
-        <h1>Hello Quark!</h1>
-      </div>
-    )
-  }
-}
-```
-
 然后，当成普通标签在各类框架（React/Vue/Angular/JQ）中使用：
 ```html
 <my-component></my-component>
@@ -59,6 +43,33 @@ Then open http://localhost:3000/ to see your app.
 
 
 <img width="100%" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
+
+
+
+## 如何使用
+
+```tsx
+import { QuarkElement, property, customElement } from "quarkc";
+
+@customElement({ tag: "quark-count" })
+export default class MyElement extends QuarkElement {
+  @property({
+    type: Number
+  })
+  count = 0;
+
+  add = () => {
+    this.count += 1;
+  }
+  
+  render() {
+    return (
+        <button onClick={this.add}>count is: { this.count }</button>
+    );
+  }
+}
+```
+
 
 
 ## 使用场景举例（为您的项目/团队提效降本）

@@ -41,19 +41,25 @@ Then open http://localhost:3000/ to see your app.
 
 
 ## how to use
-```tsx
-import QuarkElement, { customElement } from '@quarkd/core'
 
-@customElement({
-  tag: 'my-component',
-})
-class MyComponent extends QuarkElement {
+```tsx
+import { QuarkElement, property, customElement } from "quarkc";
+
+@customElement({ tag: "quark-count" })
+export default class MyElement extends QuarkElement {
+  @property({
+    type: Number
+  })
+  count = 0;
+
+  add = () => {
+    this.count += 1;
+  }
+  
   render() {
     return (
-      <div>
-        <h1>Hello Quark!</h1>
-      </div>
-    )
+        <button onClick={this.add}>count is: { this.count }</button>
+    );
   }
 }
 ```
