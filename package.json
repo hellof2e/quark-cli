@@ -1,6 +1,6 @@
 {
   "name": "@quarkd/cli",
-  "version": "0.0.14",
+  "version": "0.0.17",
   "description": "",
   "type": "module",
   "bin": {
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "enquirer": "^2.3.6",
+    "figlet": "^1.5.2",
     "kolorist": "^1.6.0",
     "minimist": "^1.2.7",
     "nanospinner": "^1.1.0",
@@ -22,7 +23,6 @@
     "quark"
   ],
   "devDependencies": {
-    "figlet": "^1.5.2",
     "vite": "^3.1.8"
   }
 }

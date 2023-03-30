@@ -6,7 +6,8 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { red, reset } from 'kolorist';
-import Printer  from './printer';
+import figlet from "figlet";
+
 
 const defaultTargetDir = 'my-element';
 const cwd = process.cwd();
@@ -114,7 +115,24 @@ async function init() {
 
 
   // Done! And print hello world.
-  Printer.power(root);
+  figlet('Enjoy Quark', (err, data) => {
+    if (err) {
+      console.log('Something went wrong...');
+      console.dir(err);
+      return;
+    }
+    console.log(data);
+
+    console.log(`\nScaffolding project in ${root}`);
+
+    console.log(`
+      cd ${path.basename(root)}
+      npm install
+      npm run dev
+    `);
+
+    console.log('Done! Enjoy it!');
+  });
 }
 
 init().catch((err) => {
