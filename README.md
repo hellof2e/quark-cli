@@ -24,8 +24,7 @@ npx create-quark-element
 
 ```
 cd my-element
-npm install
-npm start
+npm run dev
 ```
 
 Then open http://localhost:3000/ to see your app.
