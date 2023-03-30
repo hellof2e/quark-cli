@@ -12,7 +12,6 @@ export class CreateCommand {
 
   resolve(action: ActionAbstract) {
     this.program
-      // .command('[name]')
       .command('create [name]')
       .alias('c')
       .description('Generate Quark application.')

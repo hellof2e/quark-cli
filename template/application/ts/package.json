@@ -1,13 +1,11 @@
 {
   "name": "my-element",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "npm run start",
     "start": "vite --open --force",
     "build": "rm -rf lib && rollup -c"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@quarkd/rollup-plugin-postcss": "^1.0.0",
