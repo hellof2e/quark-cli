@@ -7,6 +7,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { red, reset } from 'kolorist';
 import figlet from "figlet";
+import chalk from "chalk";
 
 
 const defaultTargetDir = 'my-element';
@@ -123,15 +124,13 @@ async function init() {
     }
     console.log(data);
 
-    console.log(`\nScaffolding project in ${root}`);
+    // console.log(`\nScaffolding project in ${root}`);
 
-    console.log(`
-      cd ${path.basename(root)}
-      npm install
-      npm run dev
-    `);
+    console.log('\nDone! Enjoy it!');
 
-    console.log('Done! Enjoy it!');
+    console.log(chalk.green(`> cd ${path.basename(root)}`));
+    console.log(chalk.green('> npm install'));
+    console.log(chalk.green('> npm run dev'));
   });
 }
 

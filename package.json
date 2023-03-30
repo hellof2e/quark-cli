@@ -10,6 +10,7 @@
   "author": "xsf0105",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.2.0",
     "enquirer": "^2.3.6",
     "figlet": "^1.5.2",
     "kolorist": "^1.6.0",
@@ -21,8 +22,5 @@
     "quark-cli",
     "cli",
     "quark"
-  ],
-  "devDependencies": {
-    "vite": "^3.1.8"
-  }
+  ]
 }
