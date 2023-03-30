@@ -7,7 +7,7 @@
     "create-quark": "src/index.js"
   },
   "scripts": {},
-  "author": "xiaoyang Guo",
+  "author": "xsf0105",
   "license": "ISC",
   "dependencies": {
     "enquirer": "^2.3.6",

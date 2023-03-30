@@ -1,9 +1,9 @@
 {
-  "name": "quark-demo",
-  "version": "0.0.1",
+  "name": "my-element",
+  "version": "0.0.3",
   "scripts": {
     "dev": "npm run start",
-    "start": "vite --host",
+    "start": "vite --open --force",
     "build": "rm -rf lib && rollup -c"
   },
   "main": "./dist/index.js",
@@ -19,10 +19,11 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
     "postcss-px-to-viewport": "^1.1.1",
-    "quarkc": "^1.0.2",
+    "quarkc": "^1.0.4",
     "rollup": "^3.2.3",
     "rollup-plugin-filesize": "^9.1.2",
-    "vite": "^3.2.0"
+    "vite": "^2.3.4",
+    "vite-plugin-full-reload": "^1.0.5"
   },
   "engines": {
     "node": ">=12.0.0"
