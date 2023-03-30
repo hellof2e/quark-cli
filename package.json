@@ -1,6 +1,6 @@
 {
   "name": "@quarkd/cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Quark project tools",
   "bin": {
     "create-quark-element": "./dist/bin/index.js"
