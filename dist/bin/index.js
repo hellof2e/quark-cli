@@ -11,7 +11,5 @@ commander_1.default
     .version(require('../../package.json').version, '-v, --version');
 new commands_1.CreateCommand(commander_1.default)
     .resolve(new actions_1.CreateAction());
-new commands_1.MakeCommand(commander_1.default)
-    .resolve(new actions_1.MakeAction());
 commander_1.default.parse(process.argv);
 //# sourceMappingURL=index.js.map

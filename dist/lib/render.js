@@ -50,8 +50,8 @@ class Render {
         this._destinationPath = destinationPath;
         return this;
     }
-    language(language) {
-        this._language = language;
+    developType(developType) {
+        this._developType = developType;
         return this;
     }
     assign(name, value) {
@@ -64,7 +64,7 @@ class Render {
         return this;
     }
     make(srcFilename, distFilename, relationPath = 'app') {
-        const sourcePath = path.join(this._templatePath, this._sourcePath, this._language);
+        const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
         const file = path.join(sourcePath, srcFilename);
         const filename = path.join(process.cwd(), 'src', relationPath, this._destinationPath, distFilename);
         const str = this._env.render(file, this._assigns);
@@ -78,7 +78,8 @@ class Render {
         });
     }
     apply() {
-        const sourcePath = path.join(this._templatePath, this._sourcePath, this._language);
+        const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
+        console.log(path.join(process.cwd(), 'package.json'), 222);
         if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
             console.log(chalk_1.default.red(`project has exists!`));
             process.exit(1);

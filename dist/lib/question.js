@@ -10,41 +10,19 @@ class Question {
         this.inquirer = inquirer_1.default;
         this.promptList = [];
     }
-    language() {
+    type() {
         this.promptList.push({
             type: 'list',
-            name: 'lang',
+            name: 'type',
             message: 'Which one to use for development?',
             choices: [
                 {
-                    name: 'typescript',
-                    value: 'ts'
+                    name: 'component',
+                    value: 'component'
                 },
                 {
-                    name: 'javascript',
-                    value: 'js'
-                },
-            ],
-        });
-        return this;
-    }
-    packageManager() {
-        this.promptList.push({
-            type: 'list',
-            name: 'pm',
-            message: 'Which package manager you want?',
-            choices: [
-                {
-                    name: 'npm',
-                    value: 'npm'
-                },
-                {
-                    name: 'yarn',
-                    value: 'yarn'
-                },
-                {
-                    name: 'skip install',
-                    value: ''
+                    name: 'app',
+                    value: 'app'
                 },
             ],
         });

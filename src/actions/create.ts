@@ -5,15 +5,15 @@ export class CreateAction extends ActionAbstract {
 
   async resolve(name: string) {
     const answer = await new Question()
-      .language()
-      .packageManager()
+      .type()
+      // .packageManager()
       .ask();
 
     const renderer = new Render();
-    if (answer.lang === 'js') {
-      renderer.language('js');
+    if (answer.type === 'app') {
+      renderer.developType('app');
     } else {
-      renderer.language('ts');
+      renderer.developType('component');
     }
     renderer.source(this._source);
     renderer.destination(name);
@@ -29,6 +29,7 @@ export class CreateAction extends ActionAbstract {
         .run('install');
     }
 
-    Printer.power();
+    const start = Date.now();
+    Printer.power(start);
   }
 }

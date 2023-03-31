@@ -1,6 +1,6 @@
 {
   "name": "create-quark-app",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "create quark app.",
   "bin": {
     "create-quark-app": "./dist/bin/index.js"
@@ -21,14 +21,15 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.2",
     "commander": "^5.1.0",
     "figlet": "^1.5.0",
     "fs-extra": "^9.0.0",
     "glob": "^7.1.6",
     "inquirer": "^7.1.0",
     "nunjucks": "^3.2.1",
-    "pluralize": "^8.0.0"
+    "pluralize": "^8.0.0",
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.1",

@@ -6,47 +6,47 @@ export class Question {
 
   private promptList: inquirer.QuestionCollection[] = [];
 
-  language() {
+  type() {
     this.promptList.push({
       type: 'list',
-      name: 'lang',
+      name: 'type',
       message: 'Which one to use for development?',
       choices: [
         {
-          name: 'typescript',
-          value: 'ts'
+          name: 'component',
+          value: 'component'
         },
         {
-          name: 'javascript',
-          value: 'js'
+          name: 'app',
+          value: 'app'
         },
       ],
     });
     return this;
   }
 
-  packageManager() {
-    this.promptList.push({
-      type: 'list',
-      name: 'pm',
-      message: 'Which package manager you want?',
-      choices: [
-        {
-          name: 'npm',
-          value: 'npm'
-        },
-        {
-          name: 'yarn',
-          value: 'yarn'
-        },
-        {
-          name: 'skip install',
-          value: ''
-        },
-      ],
-    });
-    return this;
-  }
+  // packageManager() {
+  //   this.promptList.push({
+  //     type: 'list',
+  //     name: 'pm',
+  //     message: 'Which package manager you want?',
+  //     choices: [
+  //       {
+  //         name: 'npm',
+  //         value: 'npm'
+  //       },
+  //       {
+  //         name: 'yarn',
+  //         value: 'yarn'
+  //       },
+  //       {
+  //         name: 'skip install',
+  //         value: ''
+  //       },
+  //     ],
+  //   });
+  //   return this;
+  // }
 
   async ask() {
     return this.inquirer.prompt(this.promptList);

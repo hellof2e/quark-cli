@@ -1,3 +1,3 @@
 export declare class Printer {
-    static power(): void;
+    static power(start: number): void;
 }

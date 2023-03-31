@@ -6,15 +6,14 @@ const action_abstract_1 = require("./action.abstract");
 class CreateAction extends action_abstract_1.ActionAbstract {
     async resolve(name) {
         const answer = await new lib_1.Question()
-            .language()
-            .packageManager()
+            .type()
             .ask();
         const renderer = new lib_1.Render();
-        if (answer.lang === 'js') {
-            renderer.language('js');
+        if (answer.type === 'app') {
+            renderer.developType('app');
         }
         else {
-            renderer.language('ts');
+            renderer.developType('component');
         }
         renderer.source(this._source);
         renderer.destination(name);
@@ -29,7 +28,8 @@ class CreateAction extends action_abstract_1.ActionAbstract {
                 .directory(name)
                 .run('install');
         }
-        lib_1.Printer.power();
+        const start = Date.now();
+        lib_1.Printer.power(start);
     }
 }
 exports.CreateAction = CreateAction;

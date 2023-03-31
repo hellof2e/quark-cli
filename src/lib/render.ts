@@ -6,14 +6,14 @@ import fsExtra from 'fs-extra';
 import pluralize from 'pluralize';
 import chalk from 'chalk';
 
-type LanguageType = 'ts' | 'js'
+type DevelopType = 'app' | 'component'
 
 export type SourceType = 'application' | 'controller' | 'service' | 'validator' | 'resource' | 'middleware'
 
 export class Render {
   private _sourcePath: SourceType;
   private _destinationPath: string;
-  private _language: LanguageType;
+  private _developType: DevelopType;
 
   private _env: nunjucks.Environment;
   private _templatePath = path.resolve(__dirname, '../../template')
@@ -41,8 +41,8 @@ export class Render {
     return this;
   }
 
-  public language(language: LanguageType) {
-    this._language = language;
+  public developType(developType: DevelopType) {
+    this._developType = developType;
     return this;
   }
   public assign(name: string, value: any): this
@@ -60,7 +60,7 @@ export class Render {
   }
 
   public make(srcFilename: string, distFilename: string, relationPath = 'app') {
-    const sourcePath = path.join(this._templatePath, this._sourcePath, this._language);
+    const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
     const file = path.join(sourcePath, srcFilename);
     const filename = path.join(
       process.cwd(), // node进程执行时的文件夹地址，工作目录
@@ -83,7 +83,9 @@ export class Render {
   }
 
   public apply() {
-    const sourcePath = path.join(this._templatePath, this._sourcePath, this._language);
+    const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
+    console.log(path.join(process.cwd(), 'package.json'), 222);
+    
     if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
       console.log(chalk.red(`project has exists!`));
       process.exit(1);
