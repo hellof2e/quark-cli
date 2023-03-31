@@ -5,6 +5,7 @@ const lib_1 = require("../lib");
 const action_abstract_1 = require("./action.abstract");
 class CreateAction extends action_abstract_1.ActionAbstract {
     async resolve(name) {
+        console.log(name, 2222);
         const answer = await new lib_1.Question()
             .type()
             .ask();

@@ -4,6 +4,8 @@ import { ActionAbstract } from './action.abstract';
 export class CreateAction extends ActionAbstract {
 
   async resolve(name: string) {
+    console.log(name, 2222);
+    
     const answer = await new Question()
       .type()
       // .packageManager()

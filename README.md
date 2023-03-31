@@ -18,7 +18,8 @@ npm i -g create-quark-app
 With NPX:
 
 ```shell
-npx create-quark-app
+# npx create-quark-app
+create-quark-app create project-name
 ```
 
 ## 如何使用
