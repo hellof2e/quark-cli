@@ -1,70 +1,31 @@
 {
-  "name": "node2sql",
-  "version": "1.7.0",
-  "author": "allan",
-  "description": "API REST using NodeJS and KOA framework, typescript. TypeORM for SQL with class-validators. Middlewares JWT, CORS, Winston Logger. Swagger API docs",
-  "main": "dist/main.js",
+  "name": "my-component",
+  "version": "0.0.3",
   "scripts": {
-    "start": "NODE_ENV=development nodemon --watch src -e ts,tsx --exec ts-node src/main.ts",
-    "build": "npm run lint && npm run build-ts && npm run copy-static-assets",
-    "server": "node dist/main.js",
-    "build-ts": "tsc",
-    "copy-static-assets": "ts-node copyStaticAssets.ts",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+    "dev": "npm run start",
+    "start": "vite --open --force",
+    "build": "rm -rf lib && rollup -c"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "files": [
+    "./dist/index.js"
+  ],
   "devDependencies": {
-    "@types/cron": "^1.7.2",
-    "@types/koa": "2.0.49",
-    "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-helmet": "^3.1.2",
-    "@types/koa__router": "^8.0.2",
-    "@types/koa__cors": "^3.0.1",
-    "@types/node": "^12.12.6",
-    "@types/shelljs": "^0.8.7",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
-    "@typescript-eslint/parser": "^2.27.0",
-    "eslint": "^6.8.0",
-    "nodemon": "^2.0.2",
-    "shelljs": "^0.8.3",
-    "ts-node": "^8.8.2",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@koa/cors": "^3.0.0",
-    "@koa/router": "^8.0.8",
-    "axios": "^0.21.1",
-    "class-validator": "^0.11.1",
-    "cron": "^1.8.2",
-    "dayjs": "^1.10.4",
-    "koa": "^2.11.0",
-    "koa-bodyparser": "^4.3.0",
-    "koa-helmet": "^5.2.0",
-    "koa-jwt": "^3.6.0",
-    "koa-swagger-decorator": "^1.5.16",
-    "mysql": "^2.18.1",
-    "nodemailer": "^6.4.17",
-    "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.24",
-    "winston": "^3.2.1"
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@quarkd/rollup-plugin-postcss": "^1.0.0",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "postcss-px-to-viewport": "^1.1.1",
+    "quarkc": "^1.0.4",
+    "rollup": "^3.2.3",
+    "rollup-plugin-filesize": "^9.1.2",
+    "vite": "^2.3.4",
+    "vite-plugin-full-reload": "^1.0.5"
   },
   "engines": {
-    "node": "12.x.x",
-    "npm": "6.x.x"
-  },
-  "license": "MIT",
-  "keywords": [
-    "typescript",
-    "koa",
-    "koa2",
-    "jwt",
-    "winston",
-    "boilerplate",
-    "typeORM",
-    "class-validator",
-    "helmet",
-    "sql",
-    "api rest",
-    "cors",
-    "github actions"
-  ]
+    "node": ">=12.0.0"
+  }
 }
