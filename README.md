@@ -20,19 +20,6 @@ With NPX:
 npx create-quark-element
 ```
 
-## Quick Overview
-
-```
-cd my-element
-npm run dev
-```
-
-Then open http://localhost:3000/ to see your app.
-
-
-<img width="100%" alt="image" src="https://user-images.githubusercontent.com/14307551/201297870-65ced65e-78ee-45f5-8bdf-5823b6cae462.png">
-
-
 ## how to use
 
 ```tsx
@@ -62,3 +49,7 @@ Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 ```html
 <my-component></my-component>
 ```
+
+## Documentation
+
+For full documentation, visit (https://quark.hellobike.com)[https://quark.hellobike.com]
