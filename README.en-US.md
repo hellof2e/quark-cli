@@ -1,19 +1,18 @@
 # Quark CLI
 
-使用此 CLI，您可以使用它来创建跨框架/技术堆栈组件，或者您可以将其打包为 npm 包以供分发以供其他人使用。
+With this CLI, you can use this to create a cross-framework/tech stack component, or perhaps you can package it as an npm package for distribution for others to use.
 
+English | [简体中文](./README.md)
 
-简体中文 | [English](./README.en-US.md)
+## Installation:
 
-## 安装
-
-> 注意：Vite 需要 Node.js 版本 14.18+、16+。
+> NOTE: Vite requires Node.js version 14.18+, 16+.
 
 ```
 npm i -g @quarkd/cli
 ```
 
-## 创建 Quark 项目
+## Create project
 
 With NPX:
 
@@ -21,7 +20,7 @@ With NPX:
 npx create-quark-element
 ```
 
-## 如何使用
+## how to use
 
 ```tsx
 import { QuarkElement, property, customElement } from "quarkc";
@@ -45,12 +44,12 @@ export default class MyElement extends QuarkElement {
 }
 ```
 
-然后，在各种框架（React/Vue/Angular/JQ）中将其作为普通的 html 元素使用即可。
+Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 
 ```html
 <my-component></my-component>
 ```
 
-## 文档
+## Documentation
 
-如需完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
+For full documentation, visit [quark.hellobike.com](https://quark.hellobike.com)
