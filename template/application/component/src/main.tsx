@@ -1,5 +1,4 @@
 import { QuarkElement, Fragment, property, customElement } from "quarkc";
-import logo from "./logo.png";
 import style from "./main.css";
 
 @customElement({ tag: "my-component", style })
@@ -19,7 +18,7 @@ class MyComponent extends QuarkElement {
       <Fragment>
         <div>
           <a href="https://quark.hellobike.com" target="_blank">
-            <img src={logo} class="logo" alt="quark logo" />
+            <img src="https://quark-design.hellobike.com/assets/quark-logo.f9a6a307.png" class="logo" alt="quark logo" />
           </a>
         </div>
         

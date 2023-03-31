@@ -86,11 +86,11 @@ export class Render {
     const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
     console.log(path.join(process.cwd(), 'package.json'), 222);
     
-    // TODO:
-    // if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
-    //   console.log(chalk.red(`project has exists!`));
-    //   process.exit(1);
-    // }
+    // 当前目录下不存在 package.json
+    if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
+      console.log(chalk.red(`project has exists!`));
+      process.exit(1);
+    }
     const files = glob.sync(
       path.join(sourcePath, '**'),
       {
