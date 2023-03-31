@@ -125,7 +125,7 @@ async function init() {
     }
     console.log(data);
 
-    console.log(chalk.blue('\nInstalling dependencies...\n'));
+    console.log(chalk.hex('#5ce9fa').bold('\nInstalling dependencies...\n'));
 
     sh.exec(
       `cd ${path.basename(root)} && npm install && clear`
@@ -137,18 +137,18 @@ async function init() {
     console.log(`Success!`)
     console.log(`Inside that directory, you can run several commands:\n`)
     
-    console.log(` ${chalk.blue('npm run dev')}`)
+    console.log(` ${chalk.hex('#5ce9fa').bold('npm run dev')}`)
     console.log(`   Starts the development server.\n`)
     
-    console.log(` ${chalk.blue('npm run build')}`)
+    console.log(` ${chalk.hex('#5ce9fa').bold('npm run build')}`)
     console.log(`   Bundles the component inro static files for production.\n`)
     
-    console.log(` ${chalk.blue('npm run test')}`)
+    console.log(` ${chalk.hex('#5ce9fa').bold('npm run test')}`)
     console.log(`   Starts the test runner.\n`)
 
     console.log(` We suggest that you begin by typing:\n`);
-    console.log(`   ${chalk.blue(`\n cd`)} ${path.basename(root)}`);
-    console.log(`   ${chalk.blue(`\n npm run dev`)}\n`);
+    console.log(`   ${chalk.hex('#5ce9fa').bold(`\n cd`)} ${path.basename(root)}`);
+    console.log(`   ${chalk.hex('#5ce9fa').bold(`\n npm run dev`)}\n`);
 
     console.log('Happy hacking!');
   });

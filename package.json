@@ -1,6 +1,6 @@
 {
   "name": "@quarkd/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "bin": {
@@ -8,6 +8,7 @@
   },
   "scripts": {},
   "author": "xsf0105",
+  "repository": "https://github.com/hellof2e/quark-cli",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",
