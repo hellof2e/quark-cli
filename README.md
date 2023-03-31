@@ -18,7 +18,7 @@ npm i -g @quarkd/cli
 With NPX:
 
 ```shell
-npx create-quark-element
+npx create-quark-app
 ```
 
 ## 如何使用

@@ -1,10 +1,10 @@
 {
-  "name": "@quarkd/cli",
-  "version": "1.0.6",
-  "description": "",
+  "name": "create-quark-app",
+  "version": "1.0.0",
+  "description": "create quark app.",
   "type": "module",
   "bin": {
-    "create-quark-element": ".dist/index.js"
+    "create-quark-component": ".dist/index.js"
   },
   "scripts": {
     "dev": "tsc -w",

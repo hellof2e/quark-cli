@@ -72,7 +72,7 @@ class ProjectInitiator {
             type: argTargetDir ? null : 'text',
             name: 'projectName',
             message: reset('project name:'),
-            initial: 'my-element',
+            initial: 'my-component',
             onState: (state) => {
               targetDir = this.formatTargetDir(state.value) || this.defaultTargetDir;
             },
@@ -156,7 +156,7 @@ class ProjectInitiator {
   }
 }
 
-const projectInitiator = new ProjectInitiator('my-element', process.cwd(), minimist(process.argv.slice(2), { string: ['_'] }));
+const projectInitiator = new ProjectInitiator('my-component', process.cwd(), minimist(process.argv.slice(2), { string: ['_'] }));
 
 projectInitiator.init().catch((err) => {
   console.log('error', err);

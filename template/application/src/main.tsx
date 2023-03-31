@@ -2,8 +2,8 @@ import { QuarkElement, Fragment, property, customElement } from "quarkc";
 import logo from "./logo.png";
 import style from "./main.css";
 
-@customElement({ tag: "my-element", style })
-class MyElement extends QuarkElement {
+@customElement({ tag: "my-component", style })
+class MyComponent extends QuarkElement {
   @property({
     type: Number
   })
@@ -38,4 +38,4 @@ class MyElement extends QuarkElement {
   }
 }
 
-export default MyElement;
+export default MyComponent;
