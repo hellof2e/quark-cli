@@ -10,7 +10,7 @@
 > 注意：Vite 需要 Node.js 版本 14.18+、16+。
 
 ```
-npm i -g @quarkd/cli
+npm i -g create-quark-app
 ```
 
 ## 创建 Quark 项目

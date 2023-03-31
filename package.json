@@ -1,10 +1,10 @@
 {
   "name": "create-quark-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create quark app.",
   "type": "module",
   "bin": {
-    "create-quark-component": ".dist/index.js"
+    "create-quark-app": "./dist/index.js"
   },
   "scripts": {
     "dev": "tsc -w",
