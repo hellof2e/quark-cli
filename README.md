@@ -1,56 +1,63 @@
-# Quark CLI
+# node2sql cli
 
-使用此 CLI，您可以使用它来创建跨框架/技术堆栈组件，或者您可以将其打包为 npm 包以供分发以供其他人使用。
+## 介绍
+node2sql 是一款高性能、高扩展性、功能强大的 Node.js 服务端框架，可拓展为 Web 端框架。
 
+## 特性
+- node 直连数据库
+- 基于 TypeScript 开发
+- 面向切面编程（AOP）
+- 包含脚本轮训
+- 提供 ORM、验证器、资源层、服务层、中间层等抽象层能力
 
-简体中文 | [English](./README.en-US.md)
+## 快速开始
+### 安装工具
 
-## 安装
-
-> 注意：Vite 需要 Node.js 版本 14.18+、16+。
-
-```
-npm i -g create-quark-app
-```
-
-## 创建 Quark 项目
-
-With NPX:
-
-```shell
-npx create-quark-app
+```bash
+$ nrm use hellobike // 切到内网 npm 源
+$ npm install -g @hb/node2sql
 ```
 
-## 如何使用
+### 创建工程
 
-```tsx
-import { QuarkElement, property, customElement } from "quarkc";
-
-@customElement({ tag: "quark-count" })
-export default class MyElement extends QuarkElement {
-  @property({
-    type: Number
-  })
-  count = 0;
-
-  add = () => {
-    this.count += 1;
-  }
-  
-  render() {
-    return (
-        <button onClick={this.add}>count is: { this.count }</button>
-    );
-  }
-}
+```
+$ node2sql create example
+$ cd example
+$ npm start
 ```
 
-然后，在各种框架（React/Vue/Angular/JQ）中将其作为普通的 html 元素使用即可。
+### 示例
 
-```html
-<my-component></my-component>
+```bash
+➜  Desktop node2sql create example
+? Which one to use for development? typescript
+? Which package manager you want? npm
+
+> nodemon@2.0.7 postinstall /Users/xushunfa459/Desktop/example/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+npm WARN node2sql@1.7.0 No repository field.
+
+added 627 packages from 847 contributors and audited 628 packages in 8.881s
+
+38 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+                  _      ____            _
+  _ __   ___   __| | ___|___ \ ___  __ _| |
+ | '_ \ / _ \ / _` |/ _ \ __) / __|/ _` | |
+ | | | | (_) | (_| |  __// __/\__ \ (_| | |
+ |_| |_|\___/ \__,_|\___|_____|___/\__, |_|
+                                      |_|
+Please let me know if you have any questions or concerns @xushunfa.
+Done! Enjoy it!
 ```
 
-## 文档
+当看到以上信息，恭喜你，成功了。
 
-如需完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
+
+
+### 还有问题
+请钉钉联系 @赵存 or @徐顺发
