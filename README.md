@@ -52,4 +52,4 @@ Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 
 ## Documentation
 
-For full documentation, visit (https://quark.hellobike.com)[https://quark.hellobike.com]
+For full documentation, visit [quark.hellobike.com](https://quark.hellobike.com)
