@@ -80,10 +80,6 @@ class Render {
     apply() {
         const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
         console.log(path.join(process.cwd(), 'package.json'), 222);
-        if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
-            console.log(chalk_1.default.red(`project has exists!`));
-            process.exit(1);
-        }
         const files = glob_1.default.sync(path.join(sourcePath, '**'), {
             nodir: true,
             dot: true
