@@ -7,7 +7,7 @@ exports.Printer = void 0;
 const figlet_1 = __importDefault(require("figlet"));
 class Printer {
     static power() {
-        figlet_1.default('node2sql', (err, data) => {
+        figlet_1.default('quark appark', (err, data) => {
             if (err) {
                 console.log('Something went wrong...');
                 console.dir(err);

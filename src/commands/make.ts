@@ -14,7 +14,7 @@ export class MakeCommand {
     this.program
       .command('make:controller [name]')
       .alias('mc')
-      .description('New node2sql Controller file.')
+      .description('New quark app Controller file.')
       .option('-r, --rest', 'Use Rest API template')
       .option('-p, --path <path>', 'controller path in app dir, default is [controllers]')
       .action(async (name = '', destination: Command) => {
@@ -24,7 +24,7 @@ export class MakeCommand {
     this.program
       .command('make:service [name]')
       .alias('ms')
-      .description('New node2sql Service file.')
+      .description('New quark app Service file.')
       .action(async (name = '', destination: Command) => {
         await action.source('service').resolve(name, destination);
       });
@@ -32,7 +32,7 @@ export class MakeCommand {
     this.program
       .command('make:resource [name]')
       .alias('mr')
-      .description('New node2sql Resource file.')
+      .description('New quark app Resource file.')
       .action(async (name = '', destination: Command) => {
         await action.source('resource').resolve(name, destination);
       });
@@ -40,7 +40,7 @@ export class MakeCommand {
     this.program
       .command('make:middleware [name]')
       .alias('mm')
-      .description('New node2sql Middleware file.')
+      .description('New quark app Middleware file.')
       .action(async (name = '', destination: Command) => {
         await action.source('middleware').resolve(name, destination);
       });
@@ -48,7 +48,7 @@ export class MakeCommand {
     this.program
       .command('make:validator [name]')
       .alias('mv')
-      .description('New node2sql Validator file.')
+      .description('New quark app Validator file.')
       .action(async (name = '', destination: Command) => {
         await action.source('validator').resolve(name, destination);
       });
