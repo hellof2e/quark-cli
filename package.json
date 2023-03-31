@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "create quark app.",
   "bin": {
-    "node2sql": "./dist/bin/index.js"
+    "create-quark-app": "./dist/bin/index.js"
   },
   "scripts": {
     "dev": "tsc -w",
