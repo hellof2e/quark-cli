@@ -18,7 +18,6 @@ class CreateAction extends action_abstract_1.ActionAbstract {
         renderer.source(this._source);
         renderer.destination(projectName);
         renderer.apply();
-        console.log(answer, 233);
         if (answer.pm === "npm") {
             await new lib_1.NpmRunner().directory(projectName).run("install");
         }

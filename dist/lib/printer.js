@@ -14,7 +14,6 @@ class Printer {
         const defaultTargetDir = projectName ? projectName : "my-app";
         const cwd = process.cwd();
         const root = path_1.default.join(cwd, defaultTargetDir);
-        console.log(root, cwd, start, 111);
         figlet_1.default("Hello Quark", (err, data) => {
             if (err) {
                 console.log("Something went wrong...");

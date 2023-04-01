@@ -19,8 +19,6 @@ export class CreateAction extends ActionAbstract {
 		renderer.destination(projectName);
 		renderer.apply();
 
-		console.log(answer, 233);
-
 		if (answer.pm === "npm") {
 			await new NpmRunner().directory(projectName).run("install");
 		} else if (answer.pm === "yarn") {

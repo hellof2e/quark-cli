@@ -12,7 +12,7 @@ export class Printer {
 		const cwd = process.cwd();
 		const root = path.join(cwd, defaultTargetDir);
 
-		console.log(root, cwd, start, 111);
+		// console.log(root, cwd, start, 111);
 
 		figlet("Hello Quark", (err, data) => {
 			if (err) {
