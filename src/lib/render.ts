@@ -85,12 +85,16 @@ export class Render {
       const str = this._env.render(file);
       fsExtra.ensureFileSync(filename);
 
-      console.log(filename, 12);
+      console.log(process.cwd(), this._destinationPath, path.relative(sourcePath, file), 1);
+      console.log(filename, 2);
       
       fs.writeFileSync(filename, str, {
         encoding: 'utf-8'
       });
     }
+
+    // add .gitignore
+
   }
 }
 

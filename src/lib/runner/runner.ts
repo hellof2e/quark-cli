@@ -9,6 +9,7 @@ export class Runner {
   private binary: RunnerBinary
   private _directory = '';
 
+  // npm or yarn
   constructor(binary: RunnerBinary) {
     this.binary = binary;
   }
