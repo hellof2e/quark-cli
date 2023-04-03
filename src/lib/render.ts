@@ -41,6 +41,7 @@ export class Render {
     return this;
   }
 
+  // 开发类型 app or component
   public developType(developType: DevelopType) {
     this._developType = developType;
     return this;
@@ -59,32 +60,8 @@ export class Render {
     return this;
   }
 
-  public make(srcFilename: string, distFilename: string, relationPath = 'app') {
-    const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
-    const file = path.join(sourcePath, srcFilename);
-    const filename = path.join(
-      process.cwd(), // node进程执行时的文件夹地址，工作目录
-      'src',
-      relationPath,
-      this._destinationPath,
-      distFilename
-    );
-    const str = this._env.render(file, this._assigns);
-
-    if (fs.existsSync(filename)) {
-      console.log(chalk.red(`file exists!`));
-      process.exit(1);
-    }
-
-    fsExtra.ensureFileSync(filename);
-    fs.writeFileSync(filename, str, {
-      encoding: 'utf-8'
-    });
-  }
-
   public apply() {
     const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
-    console.log(path.join(process.cwd(), 'package.json'), 222);
     
     // 当前目录下不存在 package.json
     if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
@@ -98,6 +75,7 @@ export class Render {
         dot: true
       }
     );
+
     for (const file of files) {
       const filename = path.join(
         process.cwd(),
@@ -106,6 +84,9 @@ export class Render {
       );
       const str = this._env.render(file);
       fsExtra.ensureFileSync(filename);
+
+      console.log(filename, 12);
+      
       fs.writeFileSync(filename, str, {
         encoding: 'utf-8'
       });

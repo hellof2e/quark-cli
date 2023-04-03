@@ -6,7 +6,7 @@ export class CreateAction extends ActionAbstract {
 	async resolve(projectName: string) {
 		const answer = await new Question()
 			.type()
-			// .packageManager()
+			.packageManager()
 			.ask();
 
 		const renderer = new Render();

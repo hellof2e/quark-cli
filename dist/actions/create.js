@@ -7,6 +7,7 @@ class CreateAction extends action_abstract_1.ActionAbstract {
     async resolve(projectName) {
         const answer = await new lib_1.Question()
             .type()
+            .packageManager()
             .ask();
         const renderer = new lib_1.Render();
         if (answer.type === "app") {

@@ -14,7 +14,7 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
@@ -63,23 +63,8 @@ class Render {
         }
         return this;
     }
-    make(srcFilename, distFilename, relationPath = 'app') {
-        const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
-        const file = path.join(sourcePath, srcFilename);
-        const filename = path.join(process.cwd(), 'src', relationPath, this._destinationPath, distFilename);
-        const str = this._env.render(file, this._assigns);
-        if (fs.existsSync(filename)) {
-            console.log(chalk_1.default.red(`file exists!`));
-            process.exit(1);
-        }
-        fs_extra_1.default.ensureFileSync(filename);
-        fs.writeFileSync(filename, str, {
-            encoding: 'utf-8'
-        });
-    }
     apply() {
         const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
-        console.log(path.join(process.cwd(), 'package.json'), 222);
         if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
             console.log(chalk_1.default.red(`project has exists!`));
             process.exit(1);
@@ -92,6 +77,7 @@ class Render {
             const filename = path.join(process.cwd(), this._destinationPath, path.relative(sourcePath, file));
             const str = this._env.render(file);
             fs_extra_1.default.ensureFileSync(filename);
+            console.log(filename, 12);
             fs.writeFileSync(filename, str, {
                 encoding: 'utf-8'
             });

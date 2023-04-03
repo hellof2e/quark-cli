@@ -13,7 +13,7 @@ export class CreateCommand {
   resolve(action: ActionAbstract) {
     this.program
       .command('create [name]')
-      .alias('c')
+      // .alias('c')
       .description('Generate quark application.')
       .action(async (name = '', destination: Command) => {
         await action.source('application').resolve(name, destination);

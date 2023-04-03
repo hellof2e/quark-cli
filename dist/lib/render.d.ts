@@ -13,7 +13,6 @@ export declare class Render {
     developType(developType: DevelopType): this;
     assign(name: string, value: any): this;
     assign(name: object): this;
-    make(srcFilename: string, distFilename: string, relationPath?: string): void;
     apply(): void;
 }
 export {};
