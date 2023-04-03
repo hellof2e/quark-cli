@@ -19,18 +19,19 @@ import { QuarkElement, property, customElement } from "quarkc";
 
 @customElement({ tag: "quark-count" })
 export default class MyComponent extends QuarkElement {
-	@property({
-		type: Number,
-	})
-	count = 0; // default value
+    @property({
+	type: Number,
+    })
+    
+    count = 0; // default value
 
-	add = () => {
-		this.count += 1;
-	};
+    add = () => {
+	this.count += 1;
+    };
 
-	render() {
-		return <button onClick={this.add}>count is: {this.count}</button>;
-	}
+    render() {
+	return <button onClick={this.add}>count is: {this.count}</button>;
+    }
 }
 ```
 
