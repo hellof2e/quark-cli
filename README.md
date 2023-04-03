@@ -14,11 +14,11 @@ npx create-quark-app create project-name
 
 ## 如何使用
 
-```tsx
+```jsx
 import { QuarkElement, property, customElement } from "quarkc";
 
 @customElement({ tag: "quark-count" })
-export default class MyElement extends QuarkElement {
+export default class MyComponent extends QuarkElement {
 	@property({
 		type: Number,
 	})
@@ -37,7 +37,7 @@ export default class MyElement extends QuarkElement {
 然后，在各种框架（React/Vue/Angular/JQ）中将其作为普通的 html 元素使用即可。
 
 ```html
-<my-component></my-component>
+<my-component count="0"></my-component>
 ```
 
 ## 文档

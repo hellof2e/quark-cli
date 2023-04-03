@@ -26,11 +26,11 @@ npx create-quark-app
 import { QuarkElement, property, customElement } from "quarkc";
 
 @customElement({ tag: "quark-count" })
-export default class MyElement extends QuarkElement {
+export default class MyCompont extends QuarkElement {
   @property({
     type: Number
   })
-  count = 0;
+  count = 0; // default value
 
   add = () => {
     this.count += 1;
@@ -47,7 +47,7 @@ export default class MyElement extends QuarkElement {
 Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
 
 ```html
-<my-component></my-component>
+<my-component count="0"></my-component>
 ```
 
 ## Documentation
