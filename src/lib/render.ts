@@ -96,7 +96,7 @@ export class Render {
       this._destinationPath, // project name(项目名)
       '.gitignore' // file name(文件名)
     );
-    fs.writeFileSync(gitignoreFile, '/node_module', {
+    fs.writeFileSync(gitignoreFile, '/node_modules', {
       encoding: 'utf-8'
     });
   }

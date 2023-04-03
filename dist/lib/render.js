@@ -82,7 +82,7 @@ class Render {
             });
         }
         const gitignoreFile = path.join(process.cwd(), this._destinationPath, '.gitignore');
-        fs.writeFileSync(gitignoreFile, '/node_module', {
+        fs.writeFileSync(gitignoreFile, '/node_modules', {
             encoding: 'utf-8'
         });
     }
