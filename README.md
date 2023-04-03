@@ -22,7 +22,7 @@ export default class MyComponent extends QuarkElement {
 	@property({
 		type: Number,
 	})
-	count = 0;
+	count = 0; // default value
 
 	add = () => {
 		this.count += 1;
