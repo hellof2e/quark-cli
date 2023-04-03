@@ -1,6 +1,7 @@
 // import figlet from "figlet";
 import chalk from "chalk";
 import path from "path";
+import sh from "shelljs";
 
 export class Printer {
   static power(projectName: string, startTime: number) {
@@ -12,6 +13,8 @@ export class Printer {
 
     const endTime = Date.now();
     console.log(`\n ✨ Done in ${(endTime - startTime) / 1000}s\n`);
+
+    sh.exec(`clear`);
 
     console.log(`Success!`);
     console.log(`Inside that directory, you can run several commands:\n`);

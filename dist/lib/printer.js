@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Printer = void 0;
 const chalk_1 = __importDefault(require("chalk"));
 const path_1 = __importDefault(require("path"));
+const shelljs_1 = __importDefault(require("shelljs"));
 class Printer {
     static power(projectName, startTime) {
         const defaultTargetDir = projectName ? projectName : "my-app";
@@ -13,6 +14,7 @@ class Printer {
         const root = path_1.default.join(cwd, defaultTargetDir);
         const endTime = Date.now();
         console.log(`\n ✨ Done in ${(endTime - startTime) / 1000}s\n`);
+        shelljs_1.default.exec(`clear`);
         console.log(`Success!`);
         console.log(`Inside that directory, you can run several commands:\n`);
         console.log(` ${chalk_1.default.hex("#5ce9fa").bold("npm run dev")}`);

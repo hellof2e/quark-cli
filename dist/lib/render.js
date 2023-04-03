@@ -77,12 +77,14 @@ class Render {
             const filename = path.join(process.cwd(), this._destinationPath, path.relative(sourcePath, file));
             const str = this._env.render(file);
             fs_extra_1.default.ensureFileSync(filename);
-            console.log(process.cwd(), this._destinationPath, path.relative(sourcePath, file), 1);
-            console.log(filename, 2);
             fs.writeFileSync(filename, str, {
                 encoding: 'utf-8'
             });
         }
+        const gitignoreFile = path.join(process.cwd(), this._destinationPath, '.gitignore');
+        fs.writeFileSync(gitignoreFile, '/node_module', {
+            encoding: 'utf-8'
+        });
     }
 }
 exports.Render = Render;

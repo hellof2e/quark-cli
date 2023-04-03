@@ -79,22 +79,26 @@ export class Render {
     for (const file of files) {
       const filename = path.join(
         process.cwd(),
-        this._destinationPath,
-        path.relative(sourcePath, file)
+        this._destinationPath, // project name(项目名)
+        path.relative(sourcePath, file) // file name(文件名)
       );
       const str = this._env.render(file);
       fsExtra.ensureFileSync(filename);
 
-      console.log(process.cwd(), this._destinationPath, path.relative(sourcePath, file), 1);
-      console.log(filename, 2);
-      
       fs.writeFileSync(filename, str, {
         encoding: 'utf-8'
       });
     }
 
-    // add .gitignore
-
+    // add .gitignore file
+    const gitignoreFile = path.join(
+      process.cwd(),
+      this._destinationPath, // project name(项目名)
+      '.gitignore' // file name(文件名)
+    );
+    fs.writeFileSync(gitignoreFile, '/node_module', {
+      encoding: 'utf-8'
+    });
   }
 }
 
