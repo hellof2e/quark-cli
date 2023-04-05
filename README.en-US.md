@@ -25,8 +25,8 @@ npx create-quark-app
 ```tsx
 import { QuarkElement, property, customElement } from "quarkc";
 
-@customElement({ tag: "quark-count" })
-export default class MyCompont extends QuarkElement {
+@customElement({ tag: "my-component" })
+export default class Component extends QuarkElement {
   @property({
     type: Number
   })

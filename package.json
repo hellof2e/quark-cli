@@ -1,6 +1,6 @@
 {
 	"name": "create-quark-app",
-	"version": "1.1.15",
+	"version": "1.1.16",
 	"description": "create quark app.",
 	"bin": {
 		"create-quark-app": "./dist/bin/index.js"
