@@ -41,6 +41,6 @@ export default class Component extends QuarkElement {
 <my-component count="0"></my-component>
 ```
 
-## 文档
+## 文档（更新补充中）
 
 如需完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
