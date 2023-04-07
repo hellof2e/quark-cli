@@ -30,7 +30,7 @@ export default class Component extends QuarkElement {
   
   render() {
     return (
-        <button onClick={this.add}>count is: { this.count }</button>
+      <button onClick={this.add}>count is: { this.count }</button>
     );
   }
 }
