@@ -4,20 +4,12 @@ With this CLI, you can use this to create a cross-framework/tech stack component
 
 English | [简体中文](./README.md)
 
-## Installation:
+## Installation
 
 > NOTE: Vite requires Node.js version 14.18+, 16+.
 
 ```
-npm i -g @quarkd/cli
-```
-
-## Create project
-
-With NPX:
-
-```shell
-npx create-quark-app
+npx create-quark-app create project-name
 ```
 
 ## how to use
