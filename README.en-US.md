@@ -4,7 +4,7 @@ With this CLI, you can use this to create a cross-framework/tech stack component
 
 English | [简体中文](./README.md)
 
-## Installation:
+## Installation
 
 > NOTE: Vite requires Node.js version 14.18+, 16+.
 
