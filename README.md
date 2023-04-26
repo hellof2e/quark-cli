@@ -15,7 +15,7 @@ npx create-quark-app create project-name
 ## 如何使用
 
 ```jsx
-import { QuarkElement, property, customElement } from "quarkc";
+import { QuarkElement, property, customElement } from "quarkc"
 
 @customElement({ tag: "my-component" })
 export default class Component extends QuarkElement {
@@ -26,7 +26,7 @@ export default class Component extends QuarkElement {
   count = 0; // default value
 
   add = () => {
-	  this.count += 1;
+	  this.count += 1
   };
 
   render() {
