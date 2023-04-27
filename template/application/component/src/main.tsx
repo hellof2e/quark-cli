@@ -7,12 +7,12 @@ class MyComponent extends QuarkElement {
     type: Number
   })
   count = 0;
-  
+
   add = () => {
     this.count += 1;
     console.log('button was clicked', typeof this.count);
   }
-  
+
   render() {
     return (
       <Fragment>
@@ -21,16 +21,13 @@ class MyComponent extends QuarkElement {
             <img src="https://quark-design.hellobike.com/assets/quark-logo.f9a6a307.png" class="logo" alt="quark logo" />
           </a>
         </div>
-        
+
         <h1>Quark - 为跨技术栈而生</h1>
 
         <div className="card">
           <button onClick={this.add}>
             count is: { this.count }
           </button>
-          <p>
-            Edit <code>src/app.tsx</code> and save to test HMR
-          </p>
         </div>
       </Fragment>
     );

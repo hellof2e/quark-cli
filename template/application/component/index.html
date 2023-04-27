@@ -10,10 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Quark</title>
     <script type="module" src="./src/main.tsx"></script>
-    <style> body { margin: 0; display: flex; place-items: center; height: 100vh;}</style>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <!-- This is your component (custom element). -->
     <my-component atitle="Hello Quark!"></my-component>
+    <p>
+      Edit <code>src/app.tsx</code> and save to test HMR
+    </p>
   </body>
 </html>
