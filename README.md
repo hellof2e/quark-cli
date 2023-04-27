@@ -12,35 +12,16 @@
 npx create-quark-app create project-name
 ```
 
-## 如何使用
+## 使用方式
 
-```jsx
-import { QuarkElement, property, customElement } from "quarkc"
+### 一、我想开发跨技术栈组件 npm 包
 
-@customElement({ tag: "my-component" })
-export default class Component extends QuarkElement {
-  @property({
-    type: Number,
-  })
-  
-  count = 0; // default value
+[quark.hellobike.com](https://quark.hellobike.com)
 
-  add = () => {
-	  this.count += 1
-  };
+### 二、我想开发独立 Web 应用
 
-  render() {
-	  return <button onClick={this.add}>count is: {this.count}</button>;
-  }
-}
-```
+开发中...
 
-然后，在各种框架（React/Vue/Angular/JQ）中将其作为普通的 html 元素使用即可。
-
-```html
-<my-component count="0"></my-component>
-```
-
-## 文档（更新补充中）
+## 更多文档
 
 如需完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
