@@ -12,13 +12,11 @@
 npx create-quark-app create project-name
 ```
 
-## 使用方式
-
-### 一、我想开发跨技术栈组件 npm 包
+## 食用方式一、我想开发跨技术栈组件 npm 包
 
 [quark.hellobike.com](https://quark.hellobike.com)
 
-### 二、我想开发独立 Web 应用
+## 食用方式二、我想开发独立 Web 应用
 
 开发中...
 
