@@ -55,5 +55,5 @@ npm install quark-my-component
 ```js
 import 'quark-my-component/lib/index'
 
-<my-component />
+<my-component count="0" />
 ```
