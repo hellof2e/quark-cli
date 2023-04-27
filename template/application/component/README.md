@@ -21,22 +21,24 @@ npm run build
 ## 使用产物
 
 您可以在本地登录npm后，在根目录执行 `npm publish`，发布到 `npm` 平台，供他人使用。
+
 ```bash
 ➜  my-project npm publish
 npm notice
 npm notice 📦  quark-my-component@0.0.1
 npm notice === Tarball Contents ===
-npm notice 822B README.md
-npm notice 830B package.json
+npm notice 822B   README.md
+npm notice 84.6kB lib/index.js
+npm notice 827B   package.json
 npm notice === Tarball Details ===
 npm notice name:          quark-my-component
-npm notice version:       0.0.1
-npm notice filename:      quark-my-component-0.0.1.tgz
-npm notice package size:  1.0 kB
-npm notice unpacked size: 1.7 kB
-npm notice shasum:        694d8b09884efcb9b4ac9aabc5dcc33b9424e2c7
-npm notice integrity:     sha512-XLA3uK1SoGtrb[...]pYD7CaaI5xWkg==
-npm notice total files:   2
+npm notice version:       0.0.2
+npm notice filename:      quark-my-component-0.0.2.tgz
+npm notice package size:  23.5 kB
+npm notice unpacked size: 86.2 kB
+npm notice shasum:        8bb0f1815b15a7826ba2a51a159bb00b869aa9e8
+npm notice integrity:     sha512-/o+V46pchXO5M[...]G8v+B4zqeTr4g==
+npm notice total files:   3
 npm notice
 npm notice Publishing to https://registry.npmjs.org/
 + quark-my-component@0.0.1
