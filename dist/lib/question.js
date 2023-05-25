@@ -35,16 +35,16 @@ class Question {
             message: 'Which package manager you want?',
             choices: [
                 {
+                    name: 'skip install',
+                    value: ''
+                },
+                {
                     name: 'npm',
                     value: 'npm'
                 },
                 {
                     name: 'yarn',
                     value: 'yarn'
-                },
-                {
-                    name: 'skip install',
-                    value: ''
                 },
             ],
         });

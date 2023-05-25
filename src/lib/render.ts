@@ -31,7 +31,7 @@ export class Render {
   }
 
   public source(sourcePath: SourceType) {
-    
+
     this._sourcePath = sourcePath;
     return this;
   }
@@ -62,7 +62,7 @@ export class Render {
 
   public apply() {
     const sourcePath = path.join(this._templatePath, this._sourcePath, this._developType);
-    
+
     // 当前目录下不存在 package.json
     if (fs.existsSync(path.join(process.cwd(), 'package.json'))) {
       console.log(chalk.red(`project has exists!`));

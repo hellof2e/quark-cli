@@ -11,6 +11,19 @@ npm run dev
 
 入口文件为 `src/main.tsx`，使用 `vite` 进行开发时的构建，生产使用 `rollup` 进行打包。
 
+
+## 发布到 npm
+
+如果您想要将当前组件发布到 npm，请在 `package.json` 中配置：
+
+```js
+"main": "./lib/index.js",
+"module": "./lib/index.js",
+"files": [
+  "./lib/index.js"
+],
+```
+
 ## 打包产物
 
 ```

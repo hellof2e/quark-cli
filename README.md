@@ -16,9 +16,9 @@ npx create-quark-app create project-name
 
 [开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
-## 食用方式二、我想开发独立 Web 应用
+## 食用方式二、开发独立 Web 应用
 
-开发中...
+[You-Dont-Need-React-Or-Vue](https://github.com/hellof2e/You-Dont-Need-React-Or-Vue)
 
 ## 更多文档
 
