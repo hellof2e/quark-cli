@@ -1,9 +1,8 @@
-# Quark App （Playground demo）
+# Quark App(work in progress)
 
 无框架前端应用模版，底层基于 Web components。
 
 > 本工程用于脱离 React、Vue 等技术栈来构建一个独立的 Web 应用，底层基于 [Quark 引擎](https://github.com/hellof2e/quark)。
-
 
 - [x] 支持路由
 - [x] 支持数据绑定
