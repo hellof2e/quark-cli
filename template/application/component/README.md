@@ -19,8 +19,8 @@ npm run dev
 ```js
 "main": "./lib/index.js",
 "module": "./lib/index.js",
-"files": [
-  "./lib/index.js"
+"files": [ // 需要上传到 npm 的文件，也可用 .npmignore 替代
+  "/lib"
 ],
 ```
 
