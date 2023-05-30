@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-入口文件为 `src/main.tsx`，使用 `vite` 进行开发时的构建，生产使用 `rollup` 进行打包。
+入口文件为 `src/main.tsx`，使用 `vite` 进行开发时的构建，生产使用 `rollup` 进行打包(ESM/UMD)。
 
 
 ## 发布到 npm

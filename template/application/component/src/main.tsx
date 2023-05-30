@@ -3,14 +3,16 @@ import style from "./main.css";
 
 @customElement({ tag: "my-component", style })
 class MyComponent extends QuarkElement {
-  @property({
-    type: Number
-  })
+  @property({ type: Number }) // 外部属性
   count = 0;
 
-  add = () => {
+  add = () => { // 内部事件
     this.count += 1;
-    console.log('button was clicked', typeof this.count);
+  }
+
+  componentDidMount() { // 生命周期
+    console.log('dom loaded!');
+    // ...
   }
 
   render() {

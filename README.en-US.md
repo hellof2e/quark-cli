@@ -1,6 +1,6 @@
 # Quark CLI
 
-With this CLI, you can use this to create a cross-framework/tech stack component, or perhaps you can package it as an npm package for distribution for others to use.
+Using this CLI, you can use it to create cross-framework/technology stack components, or develop standalone web apps that don't depend on any front-end framework (Vue/React, etc.).
 
 English | [简体中文](./README.md)
 
@@ -12,35 +12,17 @@ English | [简体中文](./README.md)
 npx create-quark-app create project-name
 ```
 
-## how to use
+## Usage 1. Develop cross-technology stack components
 
-```tsx
-import { QuarkElement, property, customElement } from "quarkc";
+And you can publish as npm package to share component code with others.
 
-@customElement({ tag: "my-component" })
-export default class Component extends QuarkElement {
-  @property({
-    type: Number
-  })
-  count = 0; // default value
+[Develop cross-technology stack components](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
-  add = () => {
-    this.count += 1;
-  }
-  
-  render() {
-    return (
-      <button onClick={this.add}>count is: { this.count }</button>
-    );
-  }
-}
-```
+## Usage 2. Develop independent web applications
 
-Use it as a normal html element in various frameworks (React/Vue/Angular/JQ):
+Work in progress.
 
-```html
-<my-component count="0"></my-component>
-```
+[You-Dont-Need-React-Or-Vue](https://github.com/hellof2e/You-Dont-Need-React-Or-Vue)
 
 ## Documentation
 
