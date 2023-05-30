@@ -4,7 +4,7 @@ Using this CLI, you can use it to create cross-framework/technology stack compon
 
 English | [简体中文](./README.md)
 
-## Installation
+### Installation
 
 > NOTE: Vite requires Node.js version 14.18+, 16+.
 
@@ -12,18 +12,18 @@ English | [简体中文](./README.md)
 npx create-quark-app create project-name
 ```
 
-## Usage 1. Develop cross-technology stack components
+### Usage 1. Develop cross-technology stack components
 
 And you can publish as npm package to share component code with others.
 
 [Develop cross-technology stack components](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
-## Usage 2. Develop independent web applications
+### Usage 2. Develop independent web applications
 
 Work in progress.
 
 [You-Dont-Need-React-Or-Vue](https://github.com/hellof2e/You-Dont-Need-React-Or-Vue)
 
-## Documentation
+### Documentation
 
 For full documentation, visit [quark.hellobike.com](https://quark.hellobike.com)
