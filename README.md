@@ -10,7 +10,7 @@
 npx create-quark-app create project-name
 ```
 
-## 食用方式一、开发跨技术栈组件
+### 食用方式一、开发跨技术栈组件
 
 并且您可以发布为 npm 包，与他人共享组件代码。
 
