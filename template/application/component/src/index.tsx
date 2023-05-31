@@ -1,5 +1,5 @@
 import { QuarkElement, Fragment, property, customElement } from "quarkc";
-import style from "./main.css?inline";
+import style from "./index.less?inline";
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -12,12 +12,14 @@ class MyComponent extends QuarkElement {
   @property({ type: Number }) // 外部属性
   count = 0;
 
-  add = () => { // 内部事件
+  add = () => {
+    // 内部事件
     this.count += 1;
-  }
+  };
 
-  componentDidMount() { // 生命周期
-    console.log('dom loaded!');
+  componentDidMount() {
+    // 生命周期
+    console.log("dom loaded!");
     // ...
   }
 
@@ -26,16 +28,18 @@ class MyComponent extends QuarkElement {
       <Fragment>
         <div>
           <a href="https://quark.hellobike.com" target="_blank">
-            <img src="https://quark-design.hellobike.com/assets/quark-logo.f9a6a307.png" class="logo" alt="quark logo" />
+            <img
+              src="https://quark-design.hellobike.com/assets/quark-logo.f9a6a307.png"
+              class="logo"
+              alt="quark logo"
+            />
           </a>
         </div>
 
         <h1>Quark - 为跨技术栈而生</h1>
 
         <div className="card">
-          <button onClick={this.add}>
-            count is: {this.count}
-          </button>
+          <button onClick={this.add}>count is: {this.count}</button>
         </div>
       </Fragment>
     );

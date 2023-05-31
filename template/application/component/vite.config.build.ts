@@ -1,6 +1,5 @@
-import { resolve } from 'node:path'
+import { resolve } from 'path'
 import { defineConfig } from 'vite';
-import autoprefixer from 'autoprefixer';
 import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { babel } from '@rollup/plugin-babel';
@@ -11,14 +10,9 @@ const extensions = ['.js', '.ts', '.tsx']
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [autoprefixer({})],
-    },
-  },
   build: {
     lib: {
-      entry: resolve("./src/index.ts"),
+      entry: resolve("./src/index.tsx"),
       formats: ["es", "cjs"],
       fileName: "index",
     },
