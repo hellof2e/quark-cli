@@ -1,5 +1,11 @@
 import { QuarkElement, Fragment, property, customElement } from "quarkc";
-import style from "./main.css";
+import style from "./main.css?inline";
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "my-component": MyComponent;
+  }
+}
 
 @customElement({ tag: "my-component", style })
 class MyComponent extends QuarkElement {
@@ -28,7 +34,7 @@ class MyComponent extends QuarkElement {
 
         <div className="card">
           <button onClick={this.add}>
-            count is: { this.count }
+            count is: {this.count}
           </button>
         </div>
       </Fragment>
