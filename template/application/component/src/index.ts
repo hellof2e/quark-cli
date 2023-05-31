@@ -1,5 +1,6 @@
 import MyComponent from './main';
 
 export {
-  MyComponent
+  MyComponent,
+  // ... other component can be exported
 }
