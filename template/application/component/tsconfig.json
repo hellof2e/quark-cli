@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -9,15 +7,15 @@
     "jsx": "react",
     "jsxFactory": "QuarkElement.h",
     "sourceMap": false,
-    "declaration": false,
+    "declaration": true,
+    "declarationDir": "lib/types",
     "removeComments": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**"]
 }
-
