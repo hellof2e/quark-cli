@@ -1,5 +1,11 @@
 # Quark CLI
 
+<p align="center">
+  <a href="https://quark.hellobike.com/">
+    <img src="https://github.com/hellof2e/quark/assets/14307551/5968d0ed-6d60-4b13-b05b-1e9ba30a5708" >
+  </a>
+</p>
+
 Quarkc 是一个拥有完美开发体验的 web components 框架。
 
 使用此 CLI，您可以使用 quarkc 它来创建跨框架/技术堆栈组件，或开发不依赖任何前端框架（Vue/React等）的独立 Web 应用。
