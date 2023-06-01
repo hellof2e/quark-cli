@@ -19,7 +19,7 @@ npx create-quark-app create project-name
 [开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
 ### 优秀案例
-|  作者   | github 地址  | 截图 ｜
+|  作者   | github 地址  | 截图
 |  ----  | ----  | ----- |
 | hellof2e  | https://github.com/hellof2e/quark-doc-header | ![1685501041275](https://github.com/hellof2e/quark/assets/14307551/24dd5626-e6a9-452c-9c95-c2cdb8891573) |
 
