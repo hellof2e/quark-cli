@@ -12,6 +12,9 @@ class MyComponent extends QuarkElement {
   @property({ type: Number }) // 外部属性
   count = 0;
 
+  @property({ type: String })
+  text = '';
+
   add = () => {
     // 内部事件
     this.count += 1;
@@ -36,7 +39,7 @@ class MyComponent extends QuarkElement {
           </a>
         </div>
 
-        <h1>Quark - 为跨技术栈而生</h1>
+        <h1>Quark - {this.text}</h1>
 
         <div className="card">
           <button onClick={this.add}>count is: {this.count}</button>
