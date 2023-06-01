@@ -1,48 +1,48 @@
 {
-  "name": "create-quark-app",
-  "version": "1.2.7",
-  "description": "create quark app.",
-  "bin": {
-    "create-quark-app": "./dist/bin/index.js"
-  },
-  "scripts": {
-    "dev": "tsc -w",
-    "build": "tsc",
-    "test": "",
+	"name": "create-quark-app",
+	"version": "1.2.9",
+	"description": "create quark app.",
+	"bin": {
+		"create-quark-app": "./dist/bin/index.js"
+	},
+	"scripts": {
+		"dev": "tsc -w",
+		"build": "tsc",
+		"test": "",
     "prepublishOnly": "npm run build"
-  },
-  "repository": "https://github.com/hellof2e/quark-cli",
-  "keywords": [
-    "quark-cli",
-    "cli",
-    "quark"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "commander": "^5.1.0",
-    "fs-extra": "^9.0.0",
-    "glob": "^7.1.6",
-    "inquirer": "^7.1.0",
-    "nunjucks": "^3.2.1",
-    "pluralize": "^8.0.0",
-    "shelljs": "^0.8.5"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^9.0.1",
-    "@types/glob": "^7.1.1",
-    "@types/inquirer": "^6.5.0",
-    "@types/node": "^14.0.5",
-    "@types/nunjucks": "^3.1.3",
-    "@types/pluralize": "0.0.29",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
-    "eslint": "^7.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "ts-node": "^8.10.1",
-    "typescript": "^3.9.3"
-  }
+	},
+	"repository": "https://github.com/hellof2e/quark-cli",
+	"keywords": [
+		"quark-cli",
+		"cli",
+		"quark"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"commander": "^5.1.0",
+		"fs-extra": "^9.0.0",
+		"glob": "^7.1.6",
+		"inquirer": "^7.1.0",
+		"nunjucks": "^3.2.1",
+		"pluralize": "^8.0.0",
+		"shelljs": "^0.8.5"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^9.0.1",
+		"@types/glob": "^7.1.1",
+		"@types/inquirer": "^6.5.0",
+		"@types/node": "^14.0.5",
+		"@types/nunjucks": "^3.1.3",
+		"@types/pluralize": "0.0.29",
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+		"eslint-plugin-import": "^2.20.2",
+		"ts-node": "^8.10.1",
+		"typescript": "^3.9.3"
+	}
 }
