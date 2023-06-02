@@ -8,7 +8,7 @@ Quarkc 是一个拥有完美开发体验的 web components 框架。
 
 ### 安装并创建
 
-```
+```bash
 npx create-quark-app create project-name
 ```
 
