@@ -6,11 +6,11 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve("./src/index.tsx"),
-      formats: ["es", "cjs"],
+      formats: ["es", "cjs"], // 打包输出格式，默认输出 esm/commonjs
       fileName: "index",
     },
     rollupOptions: {
-      external: ['quarkc'],
+      external: ['quarkc'], // 可选项，是否将 quarkc 打包进组件
       output: {
         dir: "lib",
       },

@@ -1,6 +1,6 @@
 {
 	"name": "create-quark-app",
-	"version": "1.2.9",
+	"version": "1.2.13",
 	"description": "create quark app.",
 	"bin": {
 		"create-quark-app": "./dist/bin/index.js"
@@ -8,8 +8,7 @@
 	"scripts": {
 		"dev": "tsc -w",
 		"build": "tsc",
-		"test": "",
-    "prepublishOnly": "npm run build"
+		"test": ""
 	},
 	"repository": "https://github.com/hellof2e/quark-cli",
 	"keywords": [

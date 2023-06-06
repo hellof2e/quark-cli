@@ -9,11 +9,7 @@ npm install
 npm run dev
 ```
 
-入口文件为 `src/index.tsx`，使用 `vite` 进行开发和生产打包
-
-## 发布到 npm
-
-如果您想要将当前组件发布到 npm，请先[配置](https://docs.npmjs.com/cli/v8/commands/npm-adduser)npm账号，然后执行`npm publish`命令。
+入口文件为 `src/index.tsx`，这里使用 `vite` 进行开发和生产打包。
 
 ## 打包产物
 
@@ -27,7 +23,6 @@ npm run build
 
 您可以在本地登录 npm 后，在根目录执行 `npm publish`，发布到 `npm` 平台，供他人使用。
 
-<img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo2.jpg" />
 
 ### 1、安装
 
@@ -44,5 +39,3 @@ import "quark-my-component/lib/index";
 
 <my-component count="0" />;
 ```
-
-<img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo.jpg" />

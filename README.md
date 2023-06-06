@@ -1,33 +1,29 @@
 # Quark CLI
 
-<p align="center">
-  <a href="https://quark.hellobike.com/">
-    <img src="https://github.com/hellof2e/quark/assets/14307551/5968d0ed-6d60-4b13-b05b-1e9ba30a5708" >
-  </a>
-</p>
-
 Quarkc 是一个拥有完美开发体验的 web components 框架。
 
-使用此 CLI，您可以使用 quarkc 它来创建跨框架/技术堆栈组件，或开发不依赖任何前端框架（Vue/React等）的独立 Web 应用。
+使用此 CLI，您可以使用 quarkc 来开发：
+- **跨技术栈/原生Web组件**
+- 开发不依赖任何前端框架（Vue/React等）的 **独立 Web 应用**
 
 简体中文 | [English](./README.en-US.md)
 
 ### 安装并创建
 
-```
+```bash
 npx create-quark-app create project-name
 ```
 
-### 开发跨技术栈组件
-
-执行安装命令后选择 `component`。
+选择 `component`，开发跨技术栈组件。
 
 [开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
 ### 优秀案例
-|  作者   | github 地址  | 截图
+
+|  作者   | github 地址  | 截图 / 链接 
 |  ----  | ----  | ----- |
 | hellof2e  | https://github.com/hellof2e/quark-doc-header | ![1685501041275](https://github.com/hellof2e/quark/assets/14307551/24dd5626-e6a9-452c-9c95-c2cdb8891573) |
+| xsf0105  | https://github.com/xsf0105/dark-light-element |  https://unpkg.com/dark-light-element@latest/demo.html |
 
 
 ### 起手架模版(推荐)
