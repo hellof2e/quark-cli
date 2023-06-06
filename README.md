@@ -12,9 +12,7 @@ Quarkc 是一个拥有完美开发体验的 web components 框架。
 npx create-quark-app create project-name
 ```
 
-### 开发跨技术栈组件
-
-执行安装命令后选择 `component`。
+选择 `component`，开发跨技术栈组件。
 
 [开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
 
