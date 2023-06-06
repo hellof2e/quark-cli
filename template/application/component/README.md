@@ -13,14 +13,7 @@ npm run dev
 
 ## 发布到 npm
 
-如果您想要将当前组件发布到 npm，请在 `package.json` 中配置：
-
-```js
-// 需要上传到 npm 的文件，也可用 .npmignore 替代
-"files": [
-  "/lib"
-],
-```
+如果您想要将当前组件发布到 npm，请先[配置](https://docs.npmjs.com/cli/v8/commands/npm-adduser)npm账号，然后执行`npm publish`命令。
 
 ## 打包产物
 
