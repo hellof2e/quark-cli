@@ -9,18 +9,7 @@ npm install
 npm run dev
 ```
 
-入口文件为 `src/index.tsx`，使用 `vite` 进行开发和生产打包
-
-## 发布到 npm
-
-如果您想要将当前组件发布到 npm，请在 `package.json` 中配置：
-
-```js
-// 需要上传到 npm 的文件，也可用 .npmignore 替代
-"files": [
-  "/lib"
-],
-```
+入口文件为 `src/index.tsx`，这里使用 `vite` 进行开发和生产打包。
 
 ## 打包产物
 
