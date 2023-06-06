@@ -23,7 +23,7 @@ npx create-quark-app create project-name
 |  作者   | github 地址  | 截图 / 链接 
 |  ----  | ----  | ----- |
 | hellof2e  | https://github.com/hellof2e/quark-doc-header | ![1685501041275](https://github.com/hellof2e/quark/assets/14307551/24dd5626-e6a9-452c-9c95-c2cdb8891573) |
-| xsf0105  | https://github.com/xsf0105/dark-light-element |  https://unpkg.com/dark-light-element@0.0.3/demo.html |
+| xsf0105  | https://github.com/xsf0105/dark-light-element |  https://unpkg.com/dark-light-element@latest/demo.html |
 
 
 ### 起手架模版(推荐)
