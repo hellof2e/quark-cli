@@ -1,12 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite';
-import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import { babel } from '@rollup/plugin-babel';
-import typescript from '@rollup/plugin-typescript';
-import filesize from 'rollup-plugin-filesize';
-
-const extensions = ['.js', '.ts', '.tsx']
+import typescript from '@rollup/plugin-typescript'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,18 +16,7 @@ export default defineConfig({
         dir: "lib",
       },
       plugins: [
-        typescript(),
-        commonjs(),
-        nodeResolve({
-          extensions,
-          modulesOnly: true,
-        }),
-        babel({
-          babelHelpers: "runtime",
-          exclude: "node_modules/**",
-          extensions,
-        }),
-        filesize(),
+        typescript()
       ],
     },
   },

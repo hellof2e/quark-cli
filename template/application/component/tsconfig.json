@@ -9,6 +9,7 @@
     "sourceMap": false,
     "declaration": true,
     "declarationDir": "lib/types",
+    "emitDeclarationOnly": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
