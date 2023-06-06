@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve("./src/index.tsx"),
-      formats: ["es", "cjs"], // 打包输出格式，默认支持 esm/commonjs
+      formats: ["es", "cjs"], // 打包输出格式，默认输出 esm/commonjs
       fileName: "index",
     },
     rollupOptions: {
