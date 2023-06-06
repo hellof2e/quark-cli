@@ -34,7 +34,6 @@ npm run build
 
 您可以在本地登录 npm 后，在根目录执行 `npm publish`，发布到 `npm` 平台，供他人使用。
 
-<img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo2.jpg" />
 
 ### 1、安装
 
@@ -51,5 +50,3 @@ import "quark-my-component/lib/index";
 
 <my-component count="0" />;
 ```
-
-<img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo.jpg" />
