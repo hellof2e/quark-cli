@@ -12,13 +12,14 @@
     "build": "rimraf lib && vite build --config vite.config.build.ts",
     "prepublishOnly": "pnpm run build"
   },
-  "main": "./lib/index.js",
-  "module": "./lib/index.mjs",
+  "type": "module",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
   "types": "./lib/types/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/index.mjs",
-      "require": "./lib/index.js",
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs",
       "types": "./lib/types/src/index.d.ts"
     }
   },
