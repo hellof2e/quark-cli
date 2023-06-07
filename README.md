@@ -94,17 +94,13 @@ npm run build
 * Web Components + JSX/TSX 融合
 
 
-## 文档
-
-完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
-
-
 ### 开发独立 Web 应用
 
 执行安装命令后选择 `app`。
 
 示例：[You-Dont-Need-React-Or-Vue](https://github.com/hellof2e/You-Dont-Need-React-Or-Vue)
 
-### 更多文档
+## 文档
 
-如需完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
+完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
+
