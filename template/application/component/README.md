@@ -17,7 +17,7 @@ npm run dev
 npm run build
 ```
 
-打包后的产出为： `lib/index.js`和`lib/index.cjs`。
+打包后的产出为： `lib/index.js`和`lib/index.umd.cjs`。
 
 ## 使用产物
 

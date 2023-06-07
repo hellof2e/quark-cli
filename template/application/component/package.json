@@ -13,13 +13,13 @@
     "prepublishOnly": "pnpm run build"
   },
   "type": "module",
-  "main": "./lib/index.cjs",
+  "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./lib/index.js",
-      "require": "./lib/index.cjs",
+      "require": "./lib/index.umd.cjs",
       "types": "./lib/types/index.d.ts"
     }
   },
@@ -31,7 +31,6 @@
     "@types/node": "^20.2.5",
     "less": "^4.1.3",
     "postcss": "^8.4.24",
-    "quarkc": "^1.0.4",
     "rimraf": "^5.0.1",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3",
