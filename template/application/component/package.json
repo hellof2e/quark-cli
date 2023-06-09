@@ -10,7 +10,7 @@
     "dev": "npm run start",
     "start": "vite",
     "build": "rimraf lib && vite build --config vite.config.build.ts",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "npm run build"
   },
   "type": "module",
   "main": "./lib/index.js",
