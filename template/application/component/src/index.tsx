@@ -28,7 +28,7 @@ class MyComponent extends QuarkElement {
 
   render() {
     return (
-      <Fragment>
+      <>
         <div>
           <a href="https://quark.hellobike.com" target="_blank">
             <img
@@ -44,7 +44,7 @@ class MyComponent extends QuarkElement {
         <div className="card">
           <button onClick={this.add}>count is: {this.count}</button>
         </div>
-      </Fragment>
+      </>
     );
   }
 }
