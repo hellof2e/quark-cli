@@ -1,4 +1,4 @@
-import { QuarkElement, Fragment, customElement, property, state } from "quarkc";
+import { QuarkElement, customElement, property, state } from "quarkc";
 import { docs } from "@/config/index";
 import style from "./index.css?inline";
 
@@ -21,12 +21,12 @@ class Home extends QuarkElement {
     // });
 
     // console.log(modulesPage, modulesPage[this.path](),docs, 11);
-    
+
   }
 
   render() {
     return (
-      <Fragment>
+      <>
         <aside class="nav-links">
           <ul className="sidebar-links">
             {
@@ -56,7 +56,7 @@ class Home extends QuarkElement {
           </ul>
         </aside>
         {/* <div dangerouslySetInnerHTML={{ __html: this.md }}></div> */}
-      </Fragment>
+      </>
     );
   }
 }

@@ -1,4 +1,4 @@
-import { QuarkElement, Fragment, property, customElement, state,  createRef } from "quarkc";
+import { QuarkElement, customElement, state } from "quarkc"
 import style from "./index.css?inline"
 
 @customElement({ tag: "app-header", style })
@@ -20,7 +20,7 @@ export default class Header extends QuarkElement {
 	}]
 
   componentDidMount(): void {}
-  
+
   render() {
     return (
 			<header class="header sticky">
@@ -39,7 +39,7 @@ export default class Header extends QuarkElement {
 						<div class="toper-bar">
 							<div class="menu-group">
 								{
-									this.menus.map((item) => 
+									this.menus.map((item) =>
 									<div class="nav-item menu">
 										<a href={item.link}>
 											{item.name}

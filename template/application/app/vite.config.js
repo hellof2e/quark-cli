@@ -25,8 +25,4 @@ export default defineConfig({
     markdown(),
     vitePluginMdToHTML(),
   ],
-  // esbuild: {
-  //   jsxFactory: 'h',
-  //   jsxFragment: 'Fragment',
-  // },
 })

@@ -1,5 +1,5 @@
-import { QuarkElement, Fragment, property, customElement } from "quarkc";
-import style from "./index.less?inline";
+import { QuarkElement, property, customElement } from "quarkc"
+import style from "./index.less?inline"
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -10,19 +10,19 @@ declare global {
 @customElement({ tag: "my-component", style })
 class MyComponent extends QuarkElement {
   @property({ type: Number }) // 外部属性
-  count = 0;
+  count = 0
 
   @property({ type: String })
-  text = '';
+  text = ''
 
   add = () => {
     // 内部事件
-    this.count += 1;
+    this.count += 1
   };
 
   componentDidMount() {
     // 生命周期
-    console.log("dom loaded!");
+    console.log("dom loaded!")
     // ...
   }
 
