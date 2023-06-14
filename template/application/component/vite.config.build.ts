@@ -8,7 +8,13 @@ export default defineConfig({
     lib: {
       entry: resolve("./src/index.tsx"),
       formats: ["es", "umd"], // 打包输出格式，默认输出 esm/umd
-      fileName: "index",
+      fileName: (format, entryName) => {
+        if (format === "es") {
+          return `${entryName}.js`;
+        }
+
+        return `${entryName}.${format}.js`;
+      },
       name: "MyComponent",
     },
     rollupOptions: {
