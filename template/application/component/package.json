@@ -24,7 +24,7 @@
     }
   },
   "dependencies": {
-    "quarkc": "^1.0.10"
+    "quarkc": "^1.0.17"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.1",
