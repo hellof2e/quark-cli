@@ -1,40 +1,38 @@
 import { Router } from '@vaadin/router'
-import "@/components/Header"
-import "./main.css"
+import "./main.less"
 
-const outlet = document.querySelector('#root')
-export const router = new Router(outlet)
+import './views/NotFound'
 
-const modulesPage = (import.meta as any).glob(
-  "/src/docs/**/**.md"
-)
-
-const pageRouter = []
-for(const path in modulesPage) {
-  const name = (/docs\/(.*)\/*.md/.exec(path) as any[])[1]
-
-  console.log(name,  modulesPage[path]);
-  pageRouter.push({
-    path: `/${name}`,
-    action: async () => {  
-      const md = await modulesPage[path]();
-      const node = document.createElement('div');
-      node.innerHTML = md.default;
-      return node;
-    }
-  })
-}
-
-router.setRoutes(pageRouter)
+const outlet = document.querySelector('#root');
+export const router = new Router(outlet);
 
 router.setRoutes([{
     path: '/',
     component: 'app-home', // custom element name
-    action: async () => { await import('./views/index/'); }
+    action: async () => { await import('./views/home/index'); }
   }, {
-    path: '/docs',
-    component: 'app-docs',
-    action: async () => { await import('./views/docs'); }
-  },
-  ...pageRouter,
-]);
+    path: '/sub',
+    component: 'app-sub',
+    action: async () => { await import('./views/sub'); }
+  }, {
+    path: '(.*)',
+    component: 'app-not-found'
+  }
+])
+
+// router.setRoutes([
+//   { path: '/', component: 'hello-home' },
+//   { path: '/a', component: 'hello-a' },
+//   { path: '/b', component: 'hello-b' },
+//   {
+//     path: '/nav',
+//     component: 'hello-nav',
+//     children: [
+//       { path: '/a', component: 'hello-a' },
+//       { path: '/b', component: 'hello-b' },
+//       { path: '(.*)', component: 'hello-not-found' },
+//     ],
+//   },
+//   { path: '/fruit/:id', component: 'hello-fruit' },
+//   { path: '(.*)', component: 'hello-not-found' },
+// ]);
