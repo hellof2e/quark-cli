@@ -1,46 +1,21 @@
 # 构建跨技术栈/原生组件
 
-Quarkc 是一个拥有完美开发体验的 web components 框架。
+创建跨技术栈/原生Web组件
 
-使用此 CLI，您可以使用 quarkc 来开发：
-
-- **跨技术栈/原生Web组件**
-- 开发不依赖任何前端框架（Vue/React等）的 **独立 Web 应用(Bate)**
-
-简体中文 | [English](./README.en-US.md)
 
 ## 安装并创建
 
+1. 🔨工程安装
 ```js
 npx create-quark-app create project-name
-```
-
-选择 `component`，开发跨技术栈组件。
-
-[开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/component/README.md)
-
-## 优秀案例
-
-|  作者   | github 地址  | 截图 / 链接
-|  ----  | ----  | ----- |
-| @xsf0105  | https://github.com/xsf0105/dark-light-element |  https://unpkg.com/dark-light-element@latest/demo.html |
-| @hellof2e  | https://github.com/hellof2e/quark-doc-header | ![1685501041275](https://github.com/hellof2e/quark/assets/14307551/24dd5626-e6a9-452c-9c95-c2cdb8891573) https://quark.hellobike.com/#/ |
-| @dyf19118  | https://github.com/dyf19118/quark-ui-rate |  ![image](https://github.com/hellof2e/quark-cli/assets/14307551/e11e6c49-4c18-4bca-adc3-01a7198ab2e2) |
-| @xsf0105  | https://github.com/hellof2e/quark-doc-home |  ![1686575964690](https://github.com/hellof2e/quark/assets/14307551/9618427c-916b-4dfd-b28b-0e8e0f6ce744)  |
-
-
-## 起手架模版(推荐)
-
-1、工程安装
-```bash
-npx create-quark-app create project-name
-cd project-name
-
-npm install
+// 选择 component...
 npm start
 ```
 
-2. 自定义组件
+2. ✍️ 创建组件
+
+project-name/src/index.tsx：
+
 ```jsx
 import { QuarkElement, property, customElement } from "quarkc"
 import style from "./main.css"
@@ -62,10 +37,34 @@ export default class MyElement extends QuarkElement {
 }
 ```
 
-3. 使用
 
-各种技术栈都能运行。
+3. 构建
+```
+npm run build
+```
+
+
+4. 使用
+
+产物可以直接被任何前端项目使用
+
+```js
+import "path/your-component"
+```
+
+或发布到 npm：
+```js
+import "your-component"
+```
+
+或使用 CDN：
+```js
+<script src="https://fastly.jsdelivr.net/npm/quarkc@latest"></script>
+<script src="https://fastly.jsdelivr.net/npm/your-published-component@latest"></script>
+```
+
 ```html
+<!-- Vanilla -->
 <my-element count="count" />
 
 <!-- vue -->
@@ -81,13 +80,10 @@ export default class MyElement extends QuarkElement {
 <my-element [count]="count" />
 ```
 
-4. 构建
+## 文档
 
+完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
 
-可以打包为 UMD / ESM 格式，然后发布到 npm
-```
-npm run build
-```
 
 ## 特性
 
@@ -100,13 +96,12 @@ npm run build
 - 组件直接解耦，独立打磨，按需引用
 
 
-### 开发独立 Web 应用(Bate)
+## 优秀案例
 
-执行安装命令后选择 `app`。
-
-示例：[You-Dont-Need-React-Or-Vue](https://github.com/hellof2e/You-Dont-Need-React-Or-Vue)
-
-## 文档
-
-完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
+|  作者   | github 地址  | 截图 / 链接
+|  ----  | ----  | ----- |
+| @xsf0105  | https://github.com/xsf0105/dark-light-element |  https://unpkg.com/dark-light-element@latest/demo.html |
+| @hellof2e  | https://github.com/hellof2e/quark-doc-header | ![1685501041275](https://github.com/hellof2e/quark/assets/14307551/24dd5626-e6a9-452c-9c95-c2cdb8891573) https://quark.hellobike.com/#/ |
+| @dyf19118  | https://github.com/dyf19118/quark-ui-rate |  ![image](https://github.com/hellof2e/quark-cli/assets/14307551/e11e6c49-4c18-4bca-adc3-01a7198ab2e2) |
+| @xsf0105  | https://github.com/hellof2e/quark-doc-home |  ![1686575964690](https://github.com/hellof2e/quark/assets/14307551/9618427c-916b-4dfd-b28b-0e8e0f6ce744)  |
 

@@ -1,39 +1,22 @@
 # 构建 Web 应用
 
-开发不依赖任何前端框架（Vue/React等）的 **独立 Web 应用(Bate)**
+创建不依赖任何前端框架（Vue/React等）的 **独立 Web 应用(Bate)**
 
 
 ## 安装并创建
 
 ```js
 npx create-quark-app create project-name
+// 选择 app...
 ```
 
-选择 `app`，开发技术栈无关的前端应用/页面。
-
-[开发跨技术栈组件](https://github.com/hellof2e/quark-cli/blob/main/template/application/app/README.md)
-
-## 优秀案例
-
-|  作者   | github 地址  | 截图 / 链接
-|  ----  | ----  | ----- |
-| @xsf0105  | https://github.com/hellof2e/quark-doc-home |  ![1686575964690](https://github.com/hellof2e/quark/assets/14307551/9618427c-916b-4dfd-b28b-0e8e0f6ce744)  |
-
-
-## 起手架模版
-
-工程安装
+## 启动
 
 ```
-npx create-quark-app create project-name
-// 选择 app
-cd project-name
-
-npm install
 npm start
 ```
 
-4. 构建
+## 构建
 
 ```
 npm run build
@@ -51,3 +34,10 @@ npm run build
 
 完整文档，请访问 [quark.hellobike.com](https://quark.hellobike.com)
 
+
+
+## 优秀案例
+
+|  作者   | github 地址  | 截图 / 链接
+|  ----  | ----  | ----- |
+| @xsf0105  | https://github.com/hellof2e/quark-doc-home |  ![1686575964690](https://github.com/hellof2e/quark/assets/14307551/9618427c-916b-4dfd-b28b-0e8e0f6ce744)  |
