@@ -1,19 +1,25 @@
 import { QuarkElement, customElement, state,  createRef, } from "quarkc"
 import style from "./index.less?inline"
-import logo from "../../assets/logo.png"
+// import logo from "../../assets/logo.png"
 
 @customElement({ tag: "app-home", style })
 class Home extends QuarkElement {
+  // https://quark.hellobike.com/#/zh-CN/docs/properties
   @state()
   msg = 'Welcome to Your Quark App'
 
-  componentDidMount(): void {}
+  // https://quark.hellobike.com/#/zh-CN/docs/lifecycle
+  // componentDidMount() {}
+  // shouldComponentUpdate() {}
+  // componentDidUpdate() {}
+  // componentWillUnmount() {}
 
   render() {
     return (
       <>
         <div class="hello">
-          <img alt="quark logo" width="150" src={logo} />
+          {/* <img alt="quark logo" width="150" src={logo} /> */}
+          <img alt="quark logo" width="150" src="https://m.hellobike.com/resource/helloyun/13459/BI7jn_quark-logo.png?x-oss-process=image/quality,q_80" />
           <h1>{ this.msg }</h1>
           <p>
             For a guide and recipes on how to configure / customize this project, <br />
