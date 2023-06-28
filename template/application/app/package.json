@@ -6,6 +6,12 @@
     "start": "vite --open --force",
     "build": "rm -rf lib && rollup -c"
   },
+  "files": [
+    "lib/*",
+    "umd/*",
+    "README.md",
+    "package.json"
+  ],
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@quarkd/rollup-plugin-postcss": "^1.0.0",
