@@ -1,14 +1,9 @@
 {
   "name": "my-component",
   "version": "0.0.1",
-  "keywords": [
-    "frontend",
-    "quark",
-    "web components"
-  ],
   "scripts": {
     "dev": "npm run start",
-    "start": "vite",
+    "start": "vite --open",
     "build": "rimraf lib && vite build --config vite.config.build.ts",
     "prepublishOnly": "npm run build"
   },
@@ -23,6 +18,11 @@
       "types": "./lib/types/index.d.ts"
     }
   },
+  "keywords": [
+    "frontend",
+    "quark",
+    "web components"
+  ],
   "dependencies": {
     "quarkc": "^1.0.17"
   },
