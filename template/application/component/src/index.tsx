@@ -48,5 +48,3 @@ class MyComponent extends QuarkElement {
     );
   }
 }
-
-export default MyComponent;

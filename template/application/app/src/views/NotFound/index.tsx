@@ -2,7 +2,7 @@ import { QuarkElement, customElement, state,  createRef, } from "quarkc"
 import style from "./index.less?inline"
 
 @customElement({ tag: "app-not-found", style })
-export default class AppNotFound extends QuarkElement {
+class AppNotFound extends QuarkElement {
   handleGoBack = () => {
     history.go(-1)
   }

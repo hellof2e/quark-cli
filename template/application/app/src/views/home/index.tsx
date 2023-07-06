@@ -34,5 +34,3 @@ class Home extends QuarkElement {
     )
   }
 }
-
-export default Home;

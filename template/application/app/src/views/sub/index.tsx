@@ -2,7 +2,7 @@ import { QuarkElement, customElement, state, } from "quarkc";
 import style from "./index.css?inline";
 
 @customElement({ tag: "app-sub", style })
-export default class Sub extends QuarkElement {
+class Sub extends QuarkElement {
   @state()
   title = 'docs'
 
