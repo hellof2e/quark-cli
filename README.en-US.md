@@ -9,7 +9,7 @@ English | [简体中文](./README.md)
 > NOTE: Vite requires Node.js version 14.18+, 16+.
 
 ```
-npx create-quark-app create project-name
+npm create quarkc
 ```
 
 ### Usage 1. Develop cross-technology stack components
